@@ -1,0 +1,23 @@
+---
+name: build-deploy
+kind: pipeline
+
+trigger:
+  branch:
+    - master
+
+steps:
+  - name: build image
+    image: plugins/docker
+    environment:
+      GITHUB_PRIVATE_KEY:
+        from_secret: GITHUB_PRIVATE_KEY
+    settings:
+      repo: tsingjyujing/gitbook-upload
+      use_cache: true
+      cache_from: tsingjyujing/gitbook-upload
+      dry_run: true
+      dockerfile: Dockerfile
+      build_args_from_env:
+        - GITHUB_PRIVATE_KEY
+        - DRONE_COMMIT
