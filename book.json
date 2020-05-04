@@ -1,0 +1,17 @@
+{
+    "plugins": [
+      "hide-element",
+      "chapter-fold",
+      "katex",
+      "alerts",
+      "emphasize",
+      "-highlight",
+      "localized-footer",
+      "mermaid-gb3"
+    ],
+    "pluginsConfig": {
+      "hide-element": {
+        "elements": [".gitbook-link"]
+      }
+    }
+  }
