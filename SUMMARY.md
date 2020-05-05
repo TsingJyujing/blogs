@@ -1,13 +1,16 @@
 # 清雨影的Blog
 
 - [机器学习](ml/README.md)
+  - [一般理论](ml/common/README.md)
+    * [再谈正则化项](ml/common/regularization.md)
   - [推荐系统](ml/recsys/README.md)
-    * [测试文章](ml/recsys/test.md)
   - [强化学习](ml/rl/README.md)
-  * [测试文章](ml/test.md)
+    * [Re：从零开始的Multi-armed Bandit](ml/rl/mab-summary.md)
+
 
 - [技术杂文](other-tech/README.md)
   * [Let's encrypt -- 让我们一起愉快的使用HTTPS](other-tech/https.md)
   * [干掉吸血雷，重塑和谐P2P环境](other-tech/fuck-thunder.md)
+  * [开源CAN总线信号可编程台架](other-tech/can-panel.md)
 
 - [政治不正确](spam/README.md)
