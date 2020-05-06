@@ -12,5 +12,6 @@
   * [Let's encrypt -- 让我们一起愉快的使用HTTPS](other-tech/https.md)
   * [干掉吸血雷，重塑和谐P2P环境](other-tech/fuck-thunder.md)
   * [开源CAN总线信号可编程台架](other-tech/can-panel.md)
+  * [Linux下利用mdadm设置软件 RAID](other-tech/mdadm.md)
 
 - [政治不正确](spam/README.md)
