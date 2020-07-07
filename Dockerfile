@@ -1,4 +1,4 @@
-FROM node:stretch
+FROM node:12
 
 # Set environment
 RUN npm install gitbook-cli -g && \
