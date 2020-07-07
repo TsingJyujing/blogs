@@ -3,7 +3,7 @@
 - [机器学习](ml/README.md)
   - [一般话题](ml/common/README.md)
     * [再谈正则化项](ml/common/regularization.md)
-    <!-- * [Brief talk about CNN](ml/common/conv.md) -->
+    * [论文阅读：“快把卷积神经网络中的平移不变性带回来”](ml/common/conv.md)
     <!--* [手检测与手势识别](ml/common/hand-detection.md)-->
     * [收藏夹](ml/common/collection.md)
   - [推荐系统](ml/recsys/README.md)
