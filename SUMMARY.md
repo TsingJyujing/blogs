@@ -20,4 +20,5 @@
   * [互不联网时代的自给自足](other-tech/net-self-sufficient.md)
   
 - [政治不正确](spam/README.md)
+  * [访谈：为什么毛泽东时代工人的积极性很高？](spam/workers-interview.md)
   * [杂谈](spam/zatsudan.md)
