@@ -20,5 +20,7 @@
   * [互不联网时代的自给自足](other-tech/net-self-sufficient.md)
   
 - [政治不正确](spam/README.md)
+  * [华为251事件记忆](spam/huawei-251.md)
+  * [互不联网公司是如何强奸用户的(持续更新)](spam/rape-user.md)
   * [访谈：为什么毛泽东时代工人的积极性很高？](spam/workers-interview.md)
   * [杂谈](spam/zatsudan.md)
