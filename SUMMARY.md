@@ -18,7 +18,7 @@
   * [开源CAN总线信号可编程台架](other-tech/can-panel.md)
   * [Linux下利用mdadm设置软件 RAID](other-tech/mdadm.md)
   * [互不联网时代的自给自足](other-tech/net-self-sufficient.md)
-  * [如何简单的判断业务是否需要上云？](other-tech/cloud-or-not.md)
+  * [为什么我劝你不要使用云计算？](other-tech/cloud-or-not.md)
   
 - [政治不正确](spam/README.md)
   * [华为251事件记忆](spam/huawei-251.md)
