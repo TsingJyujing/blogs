@@ -4,13 +4,16 @@
   - [一般话题](ml/common/README.md)
     * [再谈正则化项](ml/common/regularization.md)
     * [论文阅读：“快把卷积神经网络中的平移不变性带回来”](ml/common/conv.md)
-    <!--* [手检测与手势识别](ml/common/hand-detection.md)-->
     * [收藏夹](ml/common/collection.md)
   - [推荐系统](ml/recsys/README.md)
     * [Learning To Rank 之 RankNet](ml/recsys/ranknet.md)
     * [收藏夹](ml/recsys/collection.md)
   - [强化学习](ml/rl/README.md)
     * [Re：从零开始的Multi-armed Bandit](ml/rl/mab-summary.md)
+
+- [高级物理引擎实战指南笔记](game201/README.md)
+  - [弹簧质点系统](game201/mass_spring.md)
+  - [光滑粒子法](game201/sph.md)
 
 - [技术杂文](other-tech/README.md)
   * [Let's encrypt -- 让我们一起愉快的使用HTTPS](other-tech/https.md)
@@ -19,6 +22,7 @@
   * [Linux下利用mdadm设置软件 RAID](other-tech/mdadm.md)
   * [互不联网时代的自给自足](other-tech/net-self-sufficient.md)
   * [为什么我劝你不要使用云计算？](other-tech/cloud-or-not.md)
+  * [备忘录](other-tech/note.md)
   
 - [政治不正确](spam/README.md)
   * [华为251事件记忆](spam/huawei-251.md)
