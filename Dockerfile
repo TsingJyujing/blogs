@@ -1,5 +1,8 @@
 FROM node:12
 
+
+RUN echo "registry=https://nexus.tsingjyujing.com/repository/npm/\nstrict-ssl=false" > /root/.npmrc
+
 # Set environment
 RUN npm install gitbook-cli -g && \
     gitbook install && \

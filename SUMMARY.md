@@ -14,6 +14,7 @@
 - [高级物理引擎实战指南笔记](game201/README.md)
   - [弹簧质点系统](game201/mass_spring.md)
   - [光滑粒子法](game201/sph.md)
+  - [专题：线性方程组求解](game201/linear_eq_solver.md)
 
 - [技术杂文](other-tech/README.md)
   * [Let's encrypt -- 让我们一起愉快的使用HTTPS](other-tech/https.md)
