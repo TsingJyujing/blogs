@@ -13,10 +13,10 @@ steps:
       GITHUB_PRIVATE_KEY:
         from_secret: GITHUB_PRIVATE_KEY
     settings:
-      repo: docker-registry.tsingjyujing.com/tsingjyujing/gitbook-upload
+      repo: "docker-registry.tsingjyujing.com/tsingjyujing/gitbook-upload"
       use_cache: true
-      cache_from: docker-registry.tsingjyujing.com/tsingjyujing/gitbook-upload
-      registry: docker-registry.tsingjyujing.com
+      cache_from: "docker-registry.tsingjyujing.com/tsingjyujing/gitbook-upload:latest"
+      registry: "docker-registry.tsingjyujing.com"
       username:
         from_secret: registry_user
       password:

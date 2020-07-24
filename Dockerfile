@@ -1,6 +1,5 @@
 FROM node:12
 
-
 RUN echo "registry=https://nexus.tsingjyujing.com/repository/npm/\nstrict-ssl=false" > /root/.npmrc
 
 # Set environment
@@ -37,5 +36,5 @@ WORKDIR /upload-book
 RUN git config --global user.email "nigel434@gmail.com" && \
     git config --global user.name "Blog Update Robot" && \
     git add * && \
-    git commit -m "Sync blog ${DRONE_COMMIT}" && \
+    git commit -m "[ROBOT] Update blog ${DRONE_COMMIT}" && \
     git push
