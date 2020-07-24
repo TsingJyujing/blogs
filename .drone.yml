@@ -13,11 +13,17 @@ steps:
       GITHUB_PRIVATE_KEY:
         from_secret: GITHUB_PRIVATE_KEY
     settings:
-      repo: tsingjyujing/gitbook-upload
+      repo: docker-registry.tsingjyujing.com/tsingjyujing/gitbook-upload
       use_cache: true
-      cache_from: tsingjyujing/gitbook-upload
-      dry_run: true
+      cache_from: docker-registry.tsingjyujing.com/tsingjyujing/gitbook-upload
+      registry: docker-registry.tsingjyujing.com
+      username:
+        from_secret: registry_user
+      password:
+        from_secret: registry_password
       dockerfile: Dockerfile
+      tags:
+        - latest
       build_args_from_env:
         - GITHUB_PRIVATE_KEY
         - DRONE_COMMIT
