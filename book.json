@@ -5,10 +5,12 @@
     "katex",
     "alerts",
     "emphasize",
+    "prism",
     "-highlight",
     "localized-footer",
     "mermaid-gb3",
-    "ga"
+    "ga",
+    "accordion"
   ],
   "pluginsConfig": {
     "hide-element": {

@@ -12,6 +12,8 @@
 
 ![](/img/2020-07-24-23-17-16.png)
 
+（请注意，本文中的推导仅仅是验证实验用，性能并非最优）
+
 ## Jacobi 迭代与 Gauss-Seidel
 
 ### Jacobi 迭代
@@ -31,8 +33,9 @@ $$
 
 即可求得解，至于为什么是这样，可看收敛性分析。
 
-实现
-```python3
+%accordion% Numpy实现 %accordion%
+
+```python
 def jacobi_iteration(A,b,init_x,iters=10):
     dim = init_x.shape[0]
     x = init_x
@@ -51,6 +54,9 @@ def jacobi_iteration(A,b,init_x,iters=10):
     return result
 ```
 
+%/accordion%
+
+
 ### Gauss-Seidel
 
 Jacobi迭代中，$$ x^{(k+1)} = D^{-1}(L+U)x^{(k)} + D^{-1}b $$，
@@ -61,8 +67,11 @@ Jacobi迭代中，$$ x^{(k+1)} = D^{-1}(L+U)x^{(k)} + D^{-1}b $$，
 
 （然而并没什么卵用，不必Jacobi快多少，还不能并行计算了。。。）
 
-实现
-```python3
+
+
+%accordion% Numpy实现 %accordion%
+
+```python
 def gauss_seidel_iteration(A,b,init_x,iters=10):
     dim = init_x.shape[0]
     x = init_x
@@ -81,6 +90,10 @@ def gauss_seidel_iteration(A,b,init_x,iters=10):
         result[i+1,:] = x.reshape(-1)
     return result
 ```
+
+%/accordion%
+
+
 
 ### 收敛性分析
 
@@ -137,8 +150,9 @@ $$
 
 根据这个性质，梯度下降的算法将会以互相垂直的折线路径快速逼近最优解。
 
-实现
-```python3
+%accordion% Numpy实现 %accordion%
+
+```python
 def gradient_desc(A,b,init_x,iters=10):
     dim = init_x.shape[0]
     x = init_x
@@ -153,7 +167,7 @@ def gradient_desc(A,b,init_x,iters=10):
         result[i+1,:] = x.reshape(-1)
     return result
 ```
-
+%/accordion%
 
 ## 共轭梯度法
 
@@ -172,7 +186,8 @@ def gradient_desc(A,b,init_x,iters=10):
 
 ### 测试代码
 
-```python3
+%accordion% 测试框架 %accordion%
+```python
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -212,6 +227,8 @@ init_x =  b / np.diag(A).reshape(2,1)
 
 solver_visualizer(A,b,gauss_seidel_iteration(A,b,init_x,10))
 ```
+
+%/accordion%
 
 ### 参考文献
 
