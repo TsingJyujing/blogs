@@ -17,6 +17,7 @@ steps:
       use_cache: true
       cache_from: "docker-registry.tsingjyujing.com/tsingjyujing/gitbook-upload:latest"
       registry: "docker-registry.tsingjyujing.com"
+      insecure: true
       username:
         from_secret: registry_user
       password:
