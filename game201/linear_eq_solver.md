@@ -23,7 +23,7 @@
     - 其中，D是对角线，L是上三角取负，U是下三角取负。
 - 这样，$$Ax=b$$ 就可以写成 $$(D-L-U)x=b$$ 
 - 移动一下：$$ Dx=(L+U)x + b $$ 
-- 由于D是对角矩阵，可无成本求导：$$ x=D^{-1}(L+U)x+D^{-1}b $$ 
+- 由于D是对角矩阵，可无成本求逆：$$ x=D^{-1}(L+U)x+D^{-1}b $$ 
 
 于是我们利用下列公式迭代更新：
 
@@ -56,6 +56,7 @@ def jacobi_iteration(A,b,init_x,iters=10):
 
 %/accordion%
 
+![](/img/2020-07-25-12-55-28.png)
 
 ### Gauss-Seidel
 
@@ -93,6 +94,7 @@ def gauss_seidel_iteration(A,b,init_x,iters=10):
 
 %/accordion%
 
+![](/img/2020-07-25-12-56-57.png)
 
 
 ### 收敛性分析
@@ -169,6 +171,8 @@ def gradient_desc(A,b,init_x,iters=10):
 ```
 %/accordion%
 
+![](/img/2020-07-25-12-57-21.png)
+
 ## 共轭梯度法
 
 这个方法的思路是，不走回头路，如果我每一次新的搜索空间都和之前的所有搜索空间正交，那么可以更加高效。
@@ -234,7 +238,6 @@ solver_visualizer(A,b,gauss_seidel_iteration(A,b,init_x,10))
 
 - [An Introduction to the Conjugate Gradient Method Without the Agonizing Pain](https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf)
     - [共轭梯度法通俗讲义](https://flat2010.github.io/2018/10/26/%E5%85%B1%E8%BD%AD%E6%A2%AF%E5%BA%A6%E6%B3%95%E9%80%9A%E4%BF%97%E8%AE%B2%E4%B9%89/)
-    - 强烈推荐
 
 ### 软件库收集
 
