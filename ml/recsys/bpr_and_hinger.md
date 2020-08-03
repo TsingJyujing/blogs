@@ -1,6 +1,6 @@
 # 随想： BPR Loss 与 Hinger Loss
 
-在之前的文章里，我们在加速Ranknet的时候意外的得到了BPR Loss：
+在之前的文章里，我们在[加速Ranknet](/ml/recsys/ranknet)的时候意外的得到了BPR Loss：
 
 $$
 L_{\omega} = - \sum_{i,j \in S}{log(sigmoid(s_i-s_j))}
@@ -19,6 +19,12 @@ L_{\omega} = \sum_{i,j \in S}{max(0,1-s_i+s_j)}
 $$
 
 那SVM效果会比Logistic回归好多少吗？不会的，画出来一看就知道了：
+
+```matlab
+x = [-5:0.01:5];
+plot(x,max(0,1-x),x,log(1+exp(-x)))
+legend('hinger','BPR')
+```
 
 ![](/img/2020-08-03-23-32-49.png)
 
