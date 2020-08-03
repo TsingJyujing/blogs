@@ -7,6 +7,7 @@
     * [收藏夹](ml/common/collection.md)
   - [推荐系统](ml/recsys/README.md)
     * [Learning To Rank 之 RankNet](ml/recsys/ranknet.md)
+    * [随想： BPR Loss 与 Hinger Loss](ml/recsys/bpr_and_hinger.md)
     * [收藏夹](ml/recsys/collection.md)
   - [强化学习](ml/rl/README.md)
     * [Re：从零开始的Multi-armed Bandit](ml/rl/mab-summary.md)
