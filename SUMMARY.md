@@ -30,4 +30,5 @@
   * [华为251事件记忆](spam/huawei-251.md)
   * [互不联网公司是如何强奸用户的(持续更新)](spam/rape-user.md)
   * [访谈：为什么毛泽东时代工人的积极性很高？](spam/workers-interview.md)
+  * [GFW简史](spam/gfw-history.md)
   * [杂谈](spam/zatsudan.md)
