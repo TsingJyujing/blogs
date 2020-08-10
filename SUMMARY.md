@@ -24,11 +24,12 @@
   * [Linux下利用mdadm设置软件 RAID](other-tech/mdadm.md)
   * [互不联网时代的自给自足](other-tech/net-self-sufficient.md)
   * [为什么我劝你不要使用云计算？](other-tech/cloud-or-not.md)
+  * [科学的公司内网连接技术选型](other-tech/innet.md)
   * [备忘录](other-tech/note.md)
   
 - [政治不正确](spam/README.md)
+  * [中国网络防火长城简史](spam/gfw-history.md)
   * [华为251事件记忆](spam/huawei-251.md)
   * [互不联网公司是如何强奸用户的(持续更新)](spam/rape-user.md)
   * [访谈：为什么毛泽东时代工人的积极性很高？](spam/workers-interview.md)
-  * [中国网络防火长城简史](spam/gfw-history.md)
   * [杂谈](spam/zatsudan.md)
