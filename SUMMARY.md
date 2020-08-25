@@ -28,6 +28,7 @@
   * [备忘录](other-tech/note.md)
   
 - [政治不正确](spam/README.md)
+  * [互联网政治圈观察日志](spam/bull-shit-politics.md)
   * [中国网络防火长城简史](spam/gfw-history.md)
   * [华为251事件记忆](spam/huawei-251.md)
   * [互不联网公司是如何强奸用户的(持续更新)](spam/rape-user.md)
