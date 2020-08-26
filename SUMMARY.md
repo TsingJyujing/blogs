@@ -33,6 +33,7 @@
   * [华为251事件记忆](spam/huawei-251.md)
   * [互不联网公司是如何强奸用户的(持续更新)](spam/rape-user.md)
   * [访谈：为什么毛泽东时代工人的积极性很高？](spam/workers-interview.md)
+  * [《线性代数》（同济版）——教科书中的耻辱柱](spam/tj-linear-algebra.md)
   * [杂谈](spam/zatsudan.md)
 
 - [随园食单](recipe/README.md)
