@@ -6,6 +6,7 @@
     * [论文阅读：“快把卷积神经网络中的平移不变性带回来”](ml/common/conv.md)
     * [收藏夹](ml/common/collection.md)
   - [推荐系统](ml/recsys/README.md)
+    * [Understanding LightGCN in a visualized way](ml/recsys/light_gcn.md)
     * [Learning To Rank 之 RankNet](ml/recsys/ranknet.md)
     * [随想： BPR Loss 与 Hinger Loss](ml/recsys/bpr_and_hinger.md)
     * [关于AA测试和AB测试的一些思考](ml/recsys/ab_testing.md)
