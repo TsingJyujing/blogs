@@ -59,6 +59,7 @@ AA测试，主要是估计一个提升的下确界，也就是我们最少要提
 
 ```python
 from scipy.stats import norm
+​​from math import sqrt
 
 def get_minimal_lift(C_1, N_1, C_2, N_2, confidence_level):
     mean_1 = C_1 / N_1
@@ -66,7 +67,7 @@ def get_minimal_lift(C_1, N_1, C_2, N_2, confidence_level):
     delta_mean = mean_1 - mean_2
     var_1 = mean_1 * (1 - mean_1) / N_1
     var_2 = mean_2 * (1 - mean_2) / N_2
-    return norm(delta_mean, var_1 + var_2).ppf(1 - confidence_level)
+    return norm(delta_mean, sqrt(var_1 + var_2)).ppf(1 - confidence_level)
 ```
 
 ### AB测试
@@ -84,6 +85,7 @@ $$P(x_1-x_2 \ge \epsilon)=P(x_3 \ge \epsilon)=1-\Phi_{\mu_1-\mu_2,\sigma_1^2+\si
 
 ```python
 from scipy.stats import norm
+​​from math import sqrt
 
 def get_passed_prob(C_1, N_1, C_2, N_2, epsilon):
     mean_1 = C_1 / N_1
@@ -91,7 +93,7 @@ def get_passed_prob(C_1, N_1, C_2, N_2, epsilon):
     delta_mean = mean_1 - mean_2
     var_1 = mean_1 * (1 - mean_1) / N_1
     var_2 = mean_2 * (1 - mean_2) / N_2
-    return 1.0 - norm(delta_mean, var_1 + var_2).cdf(epsilon)
+    return 1.0 - norm(delta_mean, sqrt(var_1 + var_2)).cdf(epsilon)
 ```
 
 ## 展望
