@@ -32,7 +32,7 @@
     - 虚报预期到货日期
     - 大数据杀熟始作俑者
 - 携程网
-    - 大数据杀熟
+    - 大数据杀熟，两个人订房间，以前经常消费的人定价更高
 - 三星
     - 手机爆炸频发，但是打压用户不给赔偿
         - [三星Note7“爆炸门”一年，给了我们什么样的思考？](https://zhuanlan.zhihu.com/p/28371161) [「存档链接」](https://archive.vn/J8AW7)
@@ -71,12 +71,20 @@
     - iPhone 12 （除了法国以外）默认不配充电头（Adapter）和耳机，均需要另外购买
     - 苹果的充电线声称为了环保，使用了容易坏的材质
     - 苹果的充电线需要内置经过MFi认证的芯片，否则无法充电或者通信
+    - 苹果强制收集用户应用启动数据
+        - 我个人的情况是，如果在路由器上屏蔽 ocsp.apple.com，就无法在用该路由器连接网络的情况下启动任何应用
+        - [苹果服务器宕机导致无数应用停止响应](https://www.solidot.org/story?sid=66084) [「存档链接」](https://archive.vn/5tE2I)
+        - [Apple is sending a request to their servers for every piece of software you run on your Mac](https://medium.com/@acecilia/apple-is-sending-a-request-to-their-servers-for-every-piece-of-software-you-run-on-your-mac-b0bb509eee65) [「存档链接」](https://archive.vn/ZXCUT)
+        - [Does Apple really log every app you run? A technical look](https://blog.jacopo.io/en/post/apple-ocsp/) [「存档链接」](https://archive.vn/jB4uC)
+        - 一位网友的实验，苹果甚至在使用不安全的HTTP协议传输用户隐私数据 [「原链接」](https://gist.github.com/TsingJyujing/c5d23c5537383fc264d1075d9b9800ae) [「存档链接」](https://archive.vn/thUcp)
+        - [苹果官方的回应，声称为了用户安全](https://support.apple.com/en-us/HT202491)
 - 拼多多
     - 病毒+欺骗式营销
     - 销售假货，却还要对外宣称假一赔十，实际消费者维权困难
         - [拼多多的假一赔十是真的吗？](https://www.bilibili.com/read/mobile/7944172)  [「存档链接」](https://archive.vn/gAg8i)
         - [拼多多的假一赔十是真的吗？](https://new.qq.com/omn/20201013/20201013A0I4MW00.html)  [「存档链接」](https://archive.vn/weciH)
-
+- 最近制造的拖拉机越来越难以自己修理，中西部农户更加青睐40年前的老拖拉机
+    - [「原链接」](https://www.startribune.com/for-tech-weary-midwest-farmers-40-year-old-tractors-now-a-hot-commodity/566737082/) [「存档链接」](https://archive.vn/gySMm)
 
 ## [百度竞价排名事件](https://zh.wikipedia.org/wiki/百度竞价排名事件)
 
