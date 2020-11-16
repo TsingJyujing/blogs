@@ -45,3 +45,12 @@ List里面的内容只是本人的一个草稿，一些细节未经过考证。
     -  有一位阿里员工在某职场论坛晒出了自己被辞退的经历，这位阿里员工今年35岁，有10年开发经验，过完年第一天上班，就被公司劝退，建议他这个月提离职，而被辞退的理由也是让他没想到，公司给的理由是他年纪较大，这位员工也是很迷茫，不知道接下来该如何维持生计。
 - 字（xi guan）节跳动
     - “奉劝各位不要去字节跳动了”，怀孕在家的前字节员工控诉老东家持续骚扰。[「原链接」](https://zhuanlan.zhihu.com/p/140737658) [「存档链接」](https://archive.vn/q6jhN)
+- 京东
+    - 违法取消快递员底薪，收快递提绩效
+- 拼多多
+    - 好聚，不好散。拼多多竞业协议过于苛刻。
+        - [“逃离”拼多多](https://project-gutenberg.github.io/Pincong/post/0039aeeb446a3dd19fe1dd7c03a1ba0d/)  [「存档链接」](https://archive.vn/SoADn)
+- 快手
+    - 计时如厕快手厕所装计时器监控员工！ [「原链接」](https://new.qq.com/omn/20201027/20201027A09F5B00.html) [「存档链接」](https://archive.vn/dyxVB)
+- 大疆
+    - 程序员猝死，大疆称无加班文化，离职员工怒了：有加班考核而已 [「原链接」](http://www.kejilie.com/tmtpost/article/jYBnEb.html) [「存档链接」](https://archive.vn/DVOhi)
