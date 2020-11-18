@@ -85,6 +85,11 @@
         - [拼多多的假一赔十是真的吗？](https://new.qq.com/omn/20201013/20201013A0I4MW00.html)  [「存档链接」](https://archive.vn/weciH)
 - 最近制造的拖拉机越来越难以自己修理，中西部农户更加青睐40年前的老拖拉机
     - [「原链接」](https://www.startribune.com/for-tech-weary-midwest-farmers-40-year-old-tractors-now-a-hot-commodity/566737082/) [「存档链接」](https://archive.vn/gySMm)
+- 蛋壳公寓（国内其余长租公寓公司大多存在类似现象）
+    - [警惕！你租的房子，又要爆雷了 ](https://mp.weixin.qq.com/s/c8_Av3AHvhenvrlXs5CkTA) [「存档链接」](https://archive.vn/EtRuW)
+    - 借由疫情，连哄带骗让房东免租，另一头照样收房客的租金，两头吃。
+    - 搞房租贷，很多租客，被赶出来之后，得不到任何赔偿，还得继续还租金贷款。
+
 
 ## [百度竞价排名事件](https://zh.wikipedia.org/wiki/百度竞价排名事件)
 
