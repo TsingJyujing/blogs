@@ -4,6 +4,15 @@
 
 这里记录一些劳资纠纷中，企业如何欺压劳动者的新闻。
 
+## Other Projects
+
+其它一些记录劳动者被欺负的项目：
+
+- [校招污点公司记录](https://github.com/ShameCom/ShameCom)
+- [996icu/996.ICU](https://github.com/996icu/996.ICU)
+- [fengT-T/996_list](https://github.com/fengT-T/996_list)
+- [623637646/996.Leave](https://github.com/623637646/996.Leave)
+
 ## List
 
 List里面的内容只是本人的一个草稿，一些细节未经过考证。
