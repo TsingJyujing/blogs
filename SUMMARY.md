@@ -27,6 +27,7 @@
   * [互不联网时代的自给自足](other-tech/net-self-sufficient.md)
   * [为什么我劝你不要使用云计算？](other-tech/cloud-or-not.md)
   * [科学的公司内网连接技术选型](other-tech/innet.md)
+  * [自建NAS过程中的碎碎念](other-tech/nas.md)
   * [备忘录](other-tech/note.md)
   
 - [政治不正确](spam/README.md)
