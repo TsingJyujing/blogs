@@ -110,7 +110,7 @@ server {
     # Setup HTTPS certificates
     listen       443 ssl;
     server_name  [你的域名];
-    ssl_certificate /home/[你的用户名]/.acme.sh/[你的域名]/[你的域名].cer;
+    ssl_certificate /home/[你的用户名]/.acme.sh/[你的域名]/fullchain.cer;
     ssl_certificate_key /home/[你的用户名]/.acme.sh/[你的域名]/[你的域名].key;
     ssl_session_timeout  5m;
     ssl_ciphers HIGH:!aNULL:!MD5;
@@ -131,10 +131,13 @@ server {
 }
 ```
 
+注意`ssl_certificate`要用`fullchain.cer`，我之前踩坑了，网站在浏览器里是正常的，但是如果用Python访问就会显示SSL错误，原因就没有提供完整的证书。
+
 ## 总结
 
 总之，用 Let's Encrypt 生成证书，首先你要能控制自己的服务器，其次开头的配置会有一点复杂，但是配置完以后，就可以有永久免费的证书了。
 
 网上还有一些方案使用certbot或者其它工具，本质上大同小异。但是如果你是成立了一家公司，就不要省这些小钱了。
+
 
 
