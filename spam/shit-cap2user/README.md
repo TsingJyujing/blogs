@@ -31,6 +31,10 @@
 - Amazon
     - 虚报预期到货日期
     - 大数据杀熟始作俑者
+    - 亚马逊在Covid期间不仅强制要求员工无薪休假，并且如果员工感染冠病，病假是没有薪水发的。
+        - [Revealed: Amazon told workers paid sick leave law doesn't cover warehouses](https://www.theguardian.com/technology/2020/may/07/amazon-warehouse-workers-coronavirus-time-off-california)
+        - [Amazon to impose new unpaid leave restrictions for warehouse workers starting May 1st](https://www.theverge.com/2020/4/24/21235415/amazon-unpaid-leave-warehouse-workers-covid-19-coronavirus-policy-change)
+    - [亚马逊搞了个relief fund让公众捐款](https://www.independent.co.uk/news/world/americas/coronavirus-amazon-jeff-bezos-relief-fund-covid-19-billionaire-net-worth-a9422236.html)
 - 携程网
     - 大数据杀熟，两个人订房间，以前经常消费的人定价更高
 - 三星
@@ -89,7 +93,7 @@
     - [警惕！你租的房子，又要爆雷了 ](https://mp.weixin.qq.com/s/c8_Av3AHvhenvrlXs5CkTA) [「存档链接」](https://archive.vn/EtRuW)
     - 借由疫情，连哄带骗让房东免租，另一头照样收房客的租金，两头吃。
     - 搞房租贷，很多租客，被赶出来之后，得不到任何赔偿，还得继续还租金贷款。
-
+- 单篇文章：[恶龙般的腾讯阿里，让天下没有好做的生意](https://zhuanlan.zhihu.com/p/321639996) [「存档链接」](https://archive.vn/B8M2w)
 
 ## [百度竞价排名事件](https://zh.wikipedia.org/wiki/百度竞价排名事件)
 
@@ -150,9 +154,3 @@ QQ自己迟迟没有开放API，也没有开发机器人，于是用户就自己
 ![](/img/2020-11-15-01-18-27.png)
 
 ![](/img/2020-11-15-01-19-18.png)
-
-
-## 杂乱的 References
-
-- https://zhuanlan.zhihu.com/p/166162142
-    - https://www.bilibili.com/video/BV1R741157JG
