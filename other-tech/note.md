@@ -5,23 +5,27 @@
 ps -ef|grep $1|grep -v grep|awk '{print $2}'|xargs -r kill -9
 ```
 
-
 ## MongoDB 权限配置
 
 ### 管理员权限配置
 ```javascript
-db.createUser({user:"dbadmin",pwd:"979323846",roles: [{ role:"root", db:"admin"}]})
+db.createUser({user:"root",pwd:"123456",roles: [{ role:"root", db:"admin"}]})
 ```
 
 ### 用户配置样例
 ```javascript
 db.createUser({ 
-    user: "basicdata_write",
-    pwd: "basicdata_write",
+    user: "someuser",
+    pwd: "somepassword",
     roles:[
-        { role: "readWrite", db: "basicdata" }
+        { role: "readWrite", db: "somedb" }
     ]
 })
+```
+### 删除用户
+
+```javascript
+db.dropUser("username")
 ```
 
 ## MongoDB 慢查询相关
