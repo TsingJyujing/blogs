@@ -35,6 +35,7 @@
     - [华为251事件记忆](spam/shit-cap2employee/huawei-251.md)
   * [吃屎系列：资本家如何喂用户吃屎](spam/shit-cap2user/README.md)
     - [互不联网公司是如何强奸用户的(持续更新)](spam/shit-cap2user/rape-user.md)
+  * [吃屎系列：大学如何喂学生吃屎](spam/damn-university.md)
   * [推荐系统如何让我们变得极端](spam/recsys-biased-us.md)
   * [互联网政治圈观察日志](spam/bull-shit-politics.md)
   * [中国网络防火长城简史](spam/gfw-history.md)
