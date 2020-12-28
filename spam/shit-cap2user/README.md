@@ -28,6 +28,8 @@
 - 滴滴打车
     - 烧钱补贴占领市场后开始高额收费
     - 大数据杀熟
+- 美团
+    - 大数据杀熟：[我被美团会员割了韭菜 ](https://mp.weixin.qq.com/s/nsjUyZg-OgrzaUq6Wg-4SA) [「存档链接」](https://archive.vn/Oceut)
 - Amazon
     - 虚报预期到货日期
     - 大数据杀熟始作俑者

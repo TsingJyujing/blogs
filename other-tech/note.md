@@ -5,6 +5,17 @@
 ps -ef|grep $1|grep -v grep|awk '{print $2}'|xargs -r kill -9
 ```
 
+## MySQL
+
+### 创建用户并且授权读写Schema
+
+```sql
+create user ${USERNAME} IDENTIFIED by '${PASSWORD}';
+show grants for ${USERNAME};
+grant all on ${SCHEMA}.* to ${USERNAME};
+flush privileges;
+```
+
 ## MongoDB 权限配置
 
 ### 管理员权限配置
