@@ -28,6 +28,7 @@
   * [为什么我劝你不要使用云计算？](other-tech/cloud-or-not.md)
   * [科学的公司内网连接技术选型](other-tech/innet.md)
   * [构建家用NAS过程中的碎碎念](other-tech/nas.md)
+  * [简易的Linux迁移指北](other-tech/move2linux.md)
   * [备忘录](other-tech/note.md)
   
 - [政治不正确](spam/README.md)
