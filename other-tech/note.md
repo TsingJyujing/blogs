@@ -105,3 +105,35 @@ db.currentOp().inprog.forEach(
     }
 )
 ```
+
+
+## Python Tricks
+
+### Lazy Evaluation
+
+From the blog [Python 延迟初始化（lazy property）](https://segmentfault.com/a/1190000005818249)
+
+```python
+class lazy(object):
+    def __init__(self, func):
+        self.func = func
+
+    def __get__(self, instance, cls):
+        val = self.func(instance)
+        setattr(instance, self.func.__name__, val)
+        return val
+
+def lazy_property(func):
+    attr_name = "_lazy_" + func.__name__
+
+    @property
+    def _lazy_property(self):
+        if not hasattr(self, attr_name):
+            setattr(self, attr_name, func(self))
+        return getattr(self, attr_name)
+
+    return _lazy_property
+```
+
+Comparing with the lazy, it more like cache the result, maybe can also simply replaced by `lru_cache`.
+We have to ensure the return value won't change while using it.
