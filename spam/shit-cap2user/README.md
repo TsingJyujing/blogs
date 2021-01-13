@@ -89,6 +89,10 @@
     - 销售假货，却还要对外宣称假一赔十，实际消费者维权困难
         - [拼多多的假一赔十是真的吗？](https://www.bilibili.com/read/mobile/7944172)  [「存档链接」](https://archive.vn/gAg8i)
         - [拼多多的假一赔十是真的吗？](https://new.qq.com/omn/20201013/20201013A0I4MW00.html)  [「存档链接」](https://archive.vn/weciH)
+    - 此前，一用户表示，他参与拼多多邀请返现的活动被套路，原本页面显示的是“邀请首次使用新用户1人，直接提现100元”，但该用户截图保存并分享给好友后，显示的却是“随机金额”，不到100元不能提现。而后该网友与拼多多客服沟通，欲提供截图证据，但手机显示“检测拼多多已删除“
+        - ![](/img/2021-01-13-15-11-31.png)
+        - ![](/img/2021-01-13-15-11-57.png)
+        - [拼多多回应“删除用户照片”：删除的是编辑前的原图，将做产品改进](https://www.guancha.cn/ChanJing/2021_01_12_577679.shtml) 
 - 最近制造的拖拉机越来越难以自己修理，中西部农户更加青睐40年前的老拖拉机
     - [「原链接」](https://www.startribune.com/for-tech-weary-midwest-farmers-40-year-old-tractors-now-a-hot-commodity/566737082/) [「存档链接」](https://archive.vn/gySMm)
 - 蛋壳公寓（国内其余长租公寓公司大多存在类似现象）
