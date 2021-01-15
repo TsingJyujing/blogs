@@ -42,6 +42,7 @@
   * [中国网络防火长城简史](spam/gfw-history.md)
   * [访谈：为什么毛泽东时代工人的积极性很高？](spam/workers-interview.md)
   * [《线性代数》（同济版）——教科书中的耻辱柱](spam/tj-linear-algebra.md)
+  * [广岛市开展约80万人的大规模PCR检查及网友的评论](spam/jp_covid_19/hiroshima_wide_pcr.md)
   * [杂谈](spam/zatsudan.md)
 
 - [随园食单](recipe/README.md)
