@@ -4,6 +4,7 @@
   - [一般话题](ml/common/README.md)
     * [再谈正则化项](ml/common/regularization.md)
     * [论文阅读：“快把卷积神经网络中的平移不变性带回来”](ml/common/conv.md)
+    * [半监督/无监督学习收集](ml/common/semi-supervised-learning.md)
     * [收藏夹](ml/common/collection.md)
   - [推荐系统](ml/recsys/README.md)
     * [Understanding LightGCN in a visualized way](ml/recsys/light_gcn.md)
