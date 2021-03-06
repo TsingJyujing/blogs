@@ -41,9 +41,10 @@
   * [推荐系统如何让我们变得极端](spam/recsys-biased-us.md)
   * [互联网政治圈观察日志](spam/bull-shit-politics.md)
   * [中国网络防火长城简史](spam/gfw-history.md)
-  * [访谈：为什么毛泽东时代工人的积极性很高？](spam/workers-interview.md)
   * [《线性代数》（同济版）——教科书中的耻辱柱](spam/tj-linear-algebra.md)
   * [杂谈](spam/zatsudan.md)
+    - [访谈：为什么毛泽东时代工人的积极性很高？](spam/workers-interview.md)
+    - [90年代到21世纪初的商业环境](spam/1990s-env.md)
 
 - [随园食单](recipe/README.md)
   * [ボロネーゼ](recipe/spaghetti_bolognese.md)
