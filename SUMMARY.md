@@ -30,6 +30,7 @@
   * [科学的公司内网连接技术选型](other-tech/innet.md)
   * [构建家用NAS过程中的碎碎念](other-tech/nas.md)
   * [简易的Linux迁移指北](other-tech/move2linux.md)
+  * [记录一次`rsync`命令引起的异常](other-tech/rsync-caused-problem.md)
   * [备忘录](other-tech/note.md)
   
 - [政治不正确](spam/README.md)
