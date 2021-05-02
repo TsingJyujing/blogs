@@ -20,6 +20,10 @@
   - [光滑粒子法](game201/sph.md)
   - [专题：线性方程组求解](game201/linear_eq_solver.md)
 
+
+- [有限单元法](FEM/README.md)
+  - [引论](FEM/preface.md)
+
 - [技术杂文](other-tech/README.md)
   * [Let's encrypt -- 让我们一起愉快的使用HTTPS](other-tech/https.md)
   * [干掉吸血雷，重塑和谐P2P环境](other-tech/fuck-thunder.md)
