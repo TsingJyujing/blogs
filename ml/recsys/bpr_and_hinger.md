@@ -1,6 +1,6 @@
 # 随想： BPR Loss 与 Hinger Loss
 
-在之前的文章里，我们在[加速Ranknet](/ml/recsys/ranknet)的时候意外的得到了BPR Loss：
+在之前的文章里，我们在[加速Ranknet](/ml/recsys/ranknet.md)的时候意外的得到了BPR Loss：
 
 $$
 L_{\omega} = - \sum_{i,j \in S}{log(sigmoid(s_i-s_j))}

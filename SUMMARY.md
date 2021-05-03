@@ -22,8 +22,9 @@
 
 
 - [有限单元法](FEM/README.md)
-  - [引论](FEM/preface.md)
-
+  - [0. 引论](FEM/00-preface.md)
+  - [1. 基于直接刚度法的杆系有限元方法](FEM/01-direct-stiffness-method.md)
+  
 - [技术杂文](other-tech/README.md)
   * [Let's encrypt -- 让我们一起愉快的使用HTTPS](other-tech/https.md)
   * [干掉吸血雷，重塑和谐P2P环境](other-tech/fuck-thunder.md)
