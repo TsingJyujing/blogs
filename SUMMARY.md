@@ -22,8 +22,9 @@
 
 
 - [有限单元法](FEM/README.md)
-  - [0. 引论](FEM/00-preface.md)
-  - [1. 基于直接刚度法的杆系有限元方法](FEM/01-direct-stiffness-method.md)
+  - [1. 引论](FEM/01-preface.md)
+  - [2. 基于直接刚度法的杆系有限元方法](FEM/02-direct-stiffness-method.md)
+  - [3. 针对复杂几何形状变形体的力学描述（1）](FEM/03-complex-deformable-body-1.md)
   
 - [技术杂文](other-tech/README.md)
   * [Let's encrypt -- 让我们一起愉快的使用HTTPS](other-tech/https.md)
