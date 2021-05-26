@@ -52,6 +52,6 @@
   * [杂谈](spam/zatsudan.md)
     - [访谈：为什么毛泽东时代工人的积极性很高？](spam/workers-interview.md)
     - [90年代到21世纪初的商业环境](spam/1990s-env.md)
-
+  * [为什么不应该用国产手机](spam/why-not-domestic-phone.md)
 - [随园食单](recipe/README.md)
   * [ボロネーゼ](recipe/spaghetti_bolognese.md)
