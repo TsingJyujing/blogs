@@ -11,6 +11,7 @@
     * [Learning To Rank 之 RankNet](ml/recsys/ranknet.md)
     * [随想： BPR Loss 与 Hinger Loss](ml/recsys/bpr_and_hinger.md)
     * [关于AA测试和AB测试的一些思考](ml/recsys/ab_testing.md)
+    * [无采样的矩阵分解](ml/recsys/non_sampling_mf.md)
     * [收藏夹](ml/recsys/collection.md)
   - [强化学习](ml/rl/README.md)
     * [Re：从零开始的Multi-armed Bandit](ml/rl/mab-summary.md)
