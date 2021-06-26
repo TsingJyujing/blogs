@@ -137,3 +137,16 @@ def lazy_property(func):
 
 Comparing with the lazy, it more like cache the result, maybe can also simply replaced by `lru_cache`.
 We have to ensure the return value won't change while using it.
+
+
+## FFMPEG
+
+### Convert MP4 File to MP3 File
+
+```bash
+ffmpeg -i ${MP4_FILE} -vn \
+       -acodec libmp3lame -ac 2 -ab 320k -ar 48000 \
+        ${MP3_FILE}
+```
+
+Replace `-ab {bitrate}` to `-ac 2 -qscale:a 4` to use VBR
