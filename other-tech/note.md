@@ -137,3 +137,53 @@ def lazy_property(func):
 
 Comparing with the lazy, it more like cache the result, maybe can also simply replaced by `lru_cache`.
 We have to ensure the return value won't change while using it.
+
+## 树莓派
+
+### RPI3 Ubuntu 摄像头
+
+1. 只能使用32位的系统
+2. 在`/boot/firmware/config.txt`里增加`start_x=1`
+3. 执行 `sudo snap install picamera-streaming-demo`以后重启系统
+4. 打开 http://<IP>:8000/ 即可查看
+
+参考资料：
+- [Enable Raspberry Pi Camera in Ubuntu 20.04 MATE on Raspberry Pi 4 8GB RAM](https://www.youtube.com/watch?v=CakU8hIaP7c)
+- https://github.com/ogra1/picamera-streaming-demo
+
+### RPI3 Wifi
+
+1. Edit `/etc/netplan/xxxxxx.yaml`:
+
+```yaml
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+    version: 2
+    ethernets:
+        eth0:
+            optional: true
+            dhcp4: true
+    # add wifi setup information here ...
+    wifis:
+        wlan0:
+            optional: true
+            access-points:
+                "YOUR-SSID-NAME":
+                    password: "YOUR-NETWORK-PASSWORD"
+            dhcp4: true
+```
+
+```bash
+sudo netplan --debug try 
+# (continue even if there are errors)
+sudo netplan --debug generate 
+# (provides more details in case of issues with the previous command)
+sudo netplan --debug apply 
+# (if no issues during the previous commands)
+```
+
+Reference: [How to setup the Raspberry Pi 3 onboard WiFi for Ubuntu Server 18.04 with netplan?](https://raspberrypi.stackexchange.com/questions/98598/how-to-setup-the-raspberry-pi-3-onboard-wifi-for-ubuntu-server-18-04-with-netpla)
