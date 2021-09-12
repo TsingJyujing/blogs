@@ -138,6 +138,38 @@ def lazy_property(func):
 Comparing with the lazy, it more like cache the result, maybe can also simply replaced by `lru_cache`.
 We have to ensure the return value won't change while using it.
 
+### Example of Async wait
+
+```python
+import asyncio
+from asyncio import Future
+from typing import Dict
+
+futures: Dict[str, Future] = {}
+
+
+@app.get("/test/lock/{task_id}")
+async def test_lock(task_id: str):
+    result = asyncio.get_event_loop().create_future()
+    # Put the task in Queue
+    futures[task_id] = result
+    return {
+        "result": await result
+    }
+
+
+@app.get("/test/release/{task_id}")
+async def test_release(task_id: str):
+    if task_id not in futures:
+        raise Exception("Task not found")
+    # Set result while the task finished
+    futures[task_id].set_result(f"{task_id} is done")
+    return {
+        "task": task_id
+    }
+
+```
+
 ## FFMPEG
 
 ### Convert MP4 File to MP3 File
@@ -199,3 +231,69 @@ sudo netplan --debug apply
 ```
 
 Reference: [How to setup the Raspberry Pi 3 onboard WiFi for Ubuntu Server 18.04 with netplan?](https://raspberrypi.stackexchange.com/questions/98598/how-to-setup-the-raspberry-pi-3-onboard-wifi-for-ubuntu-server-18-04-with-netpla)
+
+## Encryption
+
+### SAML2 key/pem generator
+
+```bash
+openssl req -x509 -sha256 -nodes -days 3650 -newkey rsa:2048 -keyout encryption.key -out encryption.pem
+openssl req -x509 -sha256 -nodes -days 3650 -newkey rsa:2048 -keyout signing.key -out signing.pem
+```
+
+## K8S
+
+### 创建一个管理员账户的配置文件
+
+首先创建一个Service Account
+
+```yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: <Account Name>
+  namespace: default
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: admin-user
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: <Account Name>
+  namespace: default
+```
+
+获取账户详情 `kubectl describe serviceaccount <Account Name>`
+
+随后获取secret的名字，格式一般是 `<Account Name>-token-<随机字符串>`
+
+最后获取Token：
+
+```bash
+kubectl describe secret <Token Secret Name>
+```
+
+```yaml
+apiVersion: v1
+kind: Config
+users:
+- name: <Account Name>
+  user:
+    token: "<TOKEN>"
+clusters:
+- name: <Cluster Name>
+  cluster:
+    api-version: v1
+    server: <API ENDPOINT>
+contexts:
+- name: <Cluster Name>
+  context:
+    cluster: <Cluster Name>
+    user: <Account Name>
+current-context: <Cluster Name>
+```
