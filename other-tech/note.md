@@ -199,3 +199,41 @@ sudo netplan --debug apply
 ```
 
 Reference: [How to setup the Raspberry Pi 3 onboard WiFi for Ubuntu Server 18.04 with netplan?](https://raspberrypi.stackexchange.com/questions/98598/how-to-setup-the-raspberry-pi-3-onboard-wifi-for-ubuntu-server-18-04-with-netpla)
+
+
+## Java/Scala/Kotlin
+
+### Maven Settings
+
+Mainly `~/.m2/settings.xml`.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+
+  <servers>
+    <server>
+      <id>nexus-snapshots</id>
+      <username>{username}</username>
+      <password>{password}</password>
+    </server>
+    <server>
+      <id>nexus-releases</id>
+      <username>{username}</username>
+      <password>{password}</password>
+    </server>
+  </servers>
+
+  <mirrors>
+    <mirror>
+      <id>central</id>
+      <name>central</name>
+      <url>https://nexus.xxxx.com/repository/maven/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+
+</settings>
+```
