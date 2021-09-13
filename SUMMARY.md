@@ -39,6 +39,7 @@
   * [简易的Linux迁移指北](other-tech/move2linux.md)
   * [记录一次`rsync`命令引起的异常](other-tech/rsync-caused-problem.md)
   * [备忘录](other-tech/note.md)
+  * [福冈外免切替（中国驾照换日本驾照）攻略](other-tech/fukuoka-gaimenkirikae.md)
   
 - [政治不正确](spam/README.md)
   * [吃屎系列：资本家如何喂员工吃屎](spam/shit-cap2employee/README.md)
