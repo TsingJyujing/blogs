@@ -186,6 +186,12 @@ ffmpeg -i ${MP4_FILE} -vn \
 
 Replace `-ab {bitrate}` to `-ac 2 -qscale:a 4` to use VBR
 
+### Convert to H264 mp4 file
+
+```
+ffmpeg -vcodec h264 -acodec copy -movflags +faststart -pix_fmt yuv420p -crf 23 -i input.mp4 output.mp4
+```
+
 ## 树莓派
 
 ### RPI3 Ubuntu 摄像头
