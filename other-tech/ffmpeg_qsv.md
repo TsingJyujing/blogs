@@ -87,6 +87,34 @@ cd ffmpeg
 make -j 12
 ```
 
+编译完看一眼支持的codec是不是正确：
+
+```bash
+./ffmpeg -codecs|grep qsv
+```
+
+正确的话应该输出类似：
+
+```
+ffmpeg version N-105268-g8b9ef5a516 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.3.0-17ubuntu1~20.04)
+  configuration: --enable-libmfx --enable-nonfree
+  libavutil      57. 18.100 / 57. 18.100
+  libavcodec     59. 20.100 / 59. 20.100
+  libavformat    59. 17.100 / 59. 17.100
+  libavdevice    59.  5.100 / 59.  5.100
+  libavfilter     8. 25.100 /  8. 25.100
+  libswscale      6.  5.100 /  6.  5.100
+  libswresample   4.  4.100 /  4.  4.100
+ D.V.L. av1                  Alliance for Open Media AV1 (decoders: av1 av1_qsv )
+ DEV.LS h264                 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 (decoders: h264 h264_v4l2m2m h264_qsv ) (encoders: h264_qsv h264_v4l2m2m h264_vaapi )
+ DEV.L. hevc                 H.265 / HEVC (High Efficiency Video Coding) (decoders: hevc hevc_qsv hevc_v4l2m2m ) (encoders: hevc_qsv hevc_v4l2m2m hevc_vaapi )
+ DEVIL. mjpeg                Motion JPEG (decoders: mjpeg mjpeg_qsv ) (encoders: mjpeg mjpeg_qsv mjpeg_vaapi )
+ DEV.L. mpeg2video           MPEG-2 video (decoders: mpeg2video mpegvideo mpeg2_v4l2m2m mpeg2_qsv ) (encoders: mpeg2video mpeg2_qsv mpeg2_vaapi )
+ D.V.L. vc1                  SMPTE VC-1 (decoders: vc1 vc1_qsv vc1_v4l2m2m )
+ DEV.L. vp8                  On2 VP8 (decoders: vp8 vp8_v4l2m2m vp8_qsv ) (encoders: vp8_v4l2m2m vp8_vaapi )
+ DEV.L. vp9                  Google VP9 (decoders: vp9 vp9_v4l2m2m vp9_qsv ) (encoders: vp9_vaapi vp9_qsv )
+```
 
 ## 测试
 
