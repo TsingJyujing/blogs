@@ -38,6 +38,7 @@
   * [构建家用NAS过程中的碎碎念](other-tech/nas.md)
   * [简易的Linux迁移指北](other-tech/move2linux.md)
   * [记录一次`rsync`命令引起的异常](other-tech/rsync-caused-problem.md)
+  * [为FFMPEG添加Intel QSV支持](other-tech/ffmpeg_qsv.md)
   * [备忘录](other-tech/note.md)
   * [福冈外免切替（中国驾照换日本驾照）攻略](other-tech/fukuoka-gaimenkirikae.md)
   
