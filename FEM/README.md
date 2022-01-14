@@ -4,14 +4,13 @@
 
 ## 主要学习资料
 
-
 ### 视频课程
 
-- Bilibili：[清华大学—有限元分析及应用](https://www.bilibili.com/video/av25035770)
-    - B站小伙伴热心制作PPT讲义：链接:https://pan.baidu.com/s/1x0NSXVVmt6u1-0dvAqIfgw 提取码:s719
-- 网易公开课：[清华大学有限元分析及应用 13讲](https://open.163.com/newview/movie/free?pid=WFTMARPBG)
-    - 视频顺序有问题
-- 百度云盘（蜗速下载）：[023.清华大学—有限元分析及应用（1.19 GB）](https://pan.baidu.com/s/1pJn0hcR)
+* Bilibili：[清华大学—有限元分析及应用](https://www.bilibili.com/video/av25035770)
+  * B站小伙伴热心制作PPT讲义：链接:[https://pan.baidu.com/s/1x0NSXVVmt6u1-0dvAqIfgw](https://pan.baidu.com/s/1x0NSXVVmt6u1-0dvAqIfgw) 提取码:s719
+* 网易公开课：[清华大学有限元分析及应用 13讲](https://open.163.com/newview/movie/free?pid=WFTMARPBG)
+  * 视频顺序有问题
+* 百度云盘（蜗速下载）：[023.清华大学—有限元分析及应用（1.19 GB）](https://pan.baidu.com/s/1pJn0hcR)
 
 以上视频都是一样的，选一个方便的用即可。
 
@@ -51,11 +50,10 @@
 
 ### 其余材料
 
-- [曾老师自己做的讲义](https://www.academia.edu/34293909/%E6%9C%89%E9%99%90%E5%85%83%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_Fundamentals_of_Finite_Element_Analysis)
+* [曾老师自己做的讲义](https://www.academia.edu/34293909/%E6%9C%89%E9%99%90%E5%85%83%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B\_Fundamentals\_of\_Finite\_Element\_Analysis)
 
 ## 其余资料收集
 
 (慢慢补充)
 
-- [有限元方法编程](http://cstam.org.cn/static/old/upload/fckeditor/%E6%9C%89%E9%99%90%E5%85%83%E6%96%B9%E6%B3%95%E7%BC%96%E7%A8%8B%20%20%EF%BC%88%E7%AC%AC%E4%B8%89%E7%89%88%EF%BC%89.pdf)
-
+* [有限元方法编程](http://cstam.org.cn/static/old/upload/fckeditor/%E6%9C%89%E9%99%90%E5%85%83%E6%96%B9%E6%B3%95%E7%BC%96%E7%A8%8B%20%20%EF%BC%88%E7%AC%AC%E4%B8%89%E7%89%88%EF%BC%89.pdf)

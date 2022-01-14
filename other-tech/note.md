@@ -1,3 +1,5 @@
+# 备忘录
+
 ## 批量杀线程
 
 ```
@@ -19,11 +21,13 @@ flush privileges;
 ## MongoDB 权限配置
 
 ### 管理员权限配置
+
 ```javascript
 db.createUser({user:"root",pwd:"123456",roles: [{ role:"root", db:"admin"}]})
 ```
 
 ### 用户配置样例
+
 ```javascript
 db.createUser({ 
     user: "someuser",
@@ -33,6 +37,7 @@ db.createUser({
     ]
 })
 ```
+
 ### 删除用户
 
 ```javascript
@@ -42,11 +47,13 @@ db.dropUser("username")
 ## MongoDB 慢查询相关
 
 ### 查找当前大于10.0秒的、且最慢的一个查询的详情
+
 ```bash
 mongo --quiet --eval "let limit_time = 10.0;" slow_query.js
 ```
 
 ### 统计大于10秒的慢查数量
+
 ```bash
 mongo --quiet --eval "db.currentOp().inprog.filter(x=>x['secs_running']>10).length"
 ```
@@ -106,7 +113,6 @@ db.currentOp().inprog.forEach(
 )
 ```
 
-
 ## Python Tricks
 
 ### Lazy Evaluation
@@ -135,8 +141,7 @@ def lazy_property(func):
     return _lazy_property
 ```
 
-Comparing with the lazy, it more like cache the result, maybe can also simply replaced by `lru_cache`.
-We have to ensure the return value won't change while using it.
+Comparing with the lazy, it more like cache the result, maybe can also simply replaced by `lru_cache`. We have to ensure the return value won't change while using it.
 
 ### Example of Async wait
 
@@ -167,7 +172,6 @@ async def test_release(task_id: str):
     return {
         "task": task_id
     }
-
 ```
 
 ## FFMPEG
@@ -189,11 +193,12 @@ Replace `-ab {bitrate}` to `-ac 2 -qscale:a 4` to use VBR
 1. 只能使用32位的系统
 2. 在`/boot/firmware/config.txt`里增加`start_x=1`
 3. 执行 `sudo snap install picamera-streaming-demo`以后重启系统
-4. 打开 http://<IP>:8000/ 即可查看
+4. 打开 http://:8000/ 即可查看
 
 参考资料：
-- [Enable Raspberry Pi Camera in Ubuntu 20.04 MATE on Raspberry Pi 4 8GB RAM](https://www.youtube.com/watch?v=CakU8hIaP7c)
-- https://github.com/ogra1/picamera-streaming-demo
+
+* [Enable Raspberry Pi Camera in Ubuntu 20.04 MATE on Raspberry Pi 4 8GB RAM](https://www.youtube.com/watch?v=CakU8hIaP7c)
+* [https://github.com/ogra1/picamera-streaming-demo](https://github.com/ogra1/picamera-streaming-demo)
 
 ### RPI3 Wifi
 
@@ -298,14 +303,13 @@ contexts:
 current-context: <Cluster Name>
 ```
 
-
 ## Java/Scala/Kotlin
 
 ### Maven Settings
 
 Mainly `~/.m2/settings.xml`.
 
-```xml
+```markup
 <?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

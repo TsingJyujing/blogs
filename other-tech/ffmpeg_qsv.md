@@ -37,7 +37,6 @@ sudo apt-get update -qq && sudo apt-get -y install \
   automake \
   build-essential \
   cmake \
-  git-core \
   libass-dev \
   libfreetype6-dev \
   libgnutls28-dev \
@@ -59,10 +58,10 @@ sudo apt-get update -qq && sudo apt-get -y install \
   zlib1g-dev \
   libunistring-dev \
   libaom-dev \
-  libdav1d-dev
+  git-core libdav1d-dev
 ```
 
-官网文档要求安装这些包，但是我的Ubuntu 20.04找不到`libdav1d-dev`所以干脆不装了，不影响QSV的使用。
+官网文档要求安装这些包，但是我的Ubuntu 20.04找不到`libdav1d-dev`所以干脆不装了，不影响QSV的使用，git-core也可以不用安装，不过我的机器上已经安装了git了。
 
 之后下载源代码并且生成配置：
 
@@ -126,11 +125,10 @@ ffmpeg version N-105268-g8b9ef5a516 Copyright (c) 2000-2022 the FFmpeg developer
 
 在实际测试的过程中，一些选项是不能用的，比如`-pix_fmt yuv420p -crf 23`这一类的，去掉就可以。
 
-
 ## 参考资料
 
-- [FFMPEG wiki Hardware/QuickSync](https://trac.ffmpeg.org/wiki/Hardware/QuickSync)
-- [Compile FFmpeg for Ubuntu, Debian, or Mint](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu)
-- [英特尔® 快速视频同步 (Quick Sync Video) 技术-英特尔® 官网](https://www.intel.cn/content/www/cn/zh/architecture-and-technology/quick-sync-video/quick-sync-video-general.html)
-- [Intel® Quick Sync Video Installation](https://www.intel.com/content/www/us/en/architecture-and-technology/quick-sync-video/quick-sync-video-installation.html)
-- [Intel® Media SDK](https://www.intel.com/content/www/us/en/developer/tools/media-sdk/overview.html)
+* [FFMPEG wiki Hardware/QuickSync](https://trac.ffmpeg.org/wiki/Hardware/QuickSync)
+* [Compile FFmpeg for Ubuntu, Debian, or Mint](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu)
+* [英特尔® 快速视频同步 (Quick Sync Video) 技术-英特尔® 官网](https://www.intel.cn/content/www/cn/zh/architecture-and-technology/quick-sync-video/quick-sync-video-general.html)
+* [Intel® Quick Sync Video Installation](https://www.intel.com/content/www/us/en/architecture-and-technology/quick-sync-video/quick-sync-video-installation.html)
+* [Intel® Media SDK](https://www.intel.com/content/www/us/en/developer/tools/media-sdk/overview.html)
