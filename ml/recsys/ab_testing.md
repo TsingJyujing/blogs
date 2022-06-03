@@ -97,8 +97,6 @@ def get_passed_prob(C_1, N_1, C_2, N_2, epsilon):
 
 等我下次无聊的时候，或许会尝试去计算一下吧。
 
-
-
 ### 更新：关于如何利用Beta分布进行AB测试（Bayesian Approach）
 
 之前我提到，我没有求得Beta分布的解析解。
