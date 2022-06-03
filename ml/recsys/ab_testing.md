@@ -96,3 +96,25 @@ def get_passed_prob(C_1, N_1, C_2, N_2, epsilon):
 但是我还没搞出来，因为还没有得到CTR误差的解析解。而Thompson Sampling是利用一种类似蒙特卡洛的方式来解决这个问题的。
 
 等我下次无聊的时候，或许会尝试去计算一下吧。
+
+
+
+### 更新：关于如何利用Beta分布进行AB测试（Bayesian Approach）
+
+之前我提到，我没有求得Beta分布的解析解。
+
+> 而Thompson Sampling是利用一种类似蒙特卡洛的方式来解决这个问题的。
+
+我简直是个蠢货，其实解决方案已经被我写出来了而我不自知。我的同事今天给出了一个不算漂亮但是又极其有效的解决方案：采样。
+
+假设我们现在通过AA/AB测试获得了数据，求出了C组的分布 $$x_c \sim Beta(a_c, b_c)$$ 和T组的分布 $$x_t \sim Beta(a_t, b_t)$$ ，我们现在要求期望 $$E(x_t - x_c)$$ 或者方差标准差之类的统计参数，直接用[scipy.stats.beta](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.beta.html)的 `rvs` 生成一些样本，将它们相减以后获取新的分布。
+
+仔细反省一下为什么我会这么蠢，因为在我看来，AA/AB已经是一种采样了，我们很难想象用预估出来的参数再做采样，这会导致一定程度的失真。
+
+但是换个角度想，如果只是为了求得一个封闭解不存在或者很难求的函数的数值解，蒙特卡洛也不是不能接受，采样频率调高一点就能获取足够的精度。一直自觉是个工程师，但是脑子居然在这种地方卡壳了实在是不应该。
+
+参考资料：
+
+* [scipy.stats.beta](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.beta.html)
+* [Understanding empirical Bayes estimation (using baseball statistics)](http://varianceexplained.org/r/empirical\_bayes\_baseball/)
+* [bayesian ab testing](https://docs.pymc.io/en/v3/pymc-examples/examples/case\_studies/bayesian\_ab\_testing.html)

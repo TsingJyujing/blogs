@@ -14,7 +14,7 @@
 
 可以通过：
 
-* [https://blog.tsingjyujing.com/](https://blog.tsingjyujing.com)
+* [https://blog.tsingjyujing.com/](https://blog.tsingjyujing.com/)
 * [https://tsingjyujing.gitbook.io/blogs](https://tsingjyujing.gitbook.io/blogs)
 * [https://tsingjyujing.github.io/blog/](https://tsingjyujing.github.io/blog/)
 

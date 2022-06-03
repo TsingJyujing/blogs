@@ -234,6 +234,6 @@ solver_visualizer(A,b,gauss_seidel_iteration(A,b,init_x,10))
 ### 软件库收集
 
 * [MKL Sparse Solver Routines](https://software.intel.com/content/www/us/en/develop/documentation/mkl-developer-reference-fortran/top/sparse-solver-routines.html)
-* [PARDISO](https://www.pardiso-project.org)
+* [PARDISO](https://www.pardiso-project.org/)
 * [Sparse Matrix Solvers on the GPU: Conjugate Gradients and Multigrid](http://www.cs.jhu.edu/\~misha/ReadingSeminar/Papers/Bolz03.pdf)
 * [cuSOLVER](https://docs.nvidia.com/cuda/cusolver/index.html)

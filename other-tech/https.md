@@ -27,7 +27,7 @@
 
 ## Let's Encrypt
 
-但是HTTPS其实不需要这么麻烦，不是吗？我们只需要证明你是你就可以了，于是就有了 [https://letsencrypt.org/](https://letsencrypt.org) ，通过某种约定（比如在网站的某个目录下放一个特定的文件，或者增加一条解析什么的）证明网站是你的，我们就可以用根证书为你签名一张HTTPS证书。
+但是HTTPS其实不需要这么麻烦，不是吗？我们只需要证明你是你就可以了，于是就有了 [https://letsencrypt.org/](https://letsencrypt.org/) ，通过某种约定（比如在网站的某个目录下放一个特定的文件，或者增加一条解析什么的）证明网站是你的，我们就可以用根证书为你签名一张HTTPS证书。
 
 具体的原理在官网上可以看到：[Let's Encrypt 的运作方式](https://letsencrypt.org/zh-cn/how-it-works/)。
 
