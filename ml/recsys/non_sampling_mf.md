@@ -26,7 +26,7 @@
 
 难采？难采就不要采咯！（梅开二度）
 
-![](<../../img/2021-06-19-21-58-26 (1).png>)
+![](<../../img/2021-06-19-21-58-26.png>)
 
 不采，就是全采，色即是空，这就是这篇文章的重点。我最早读到这个思路是在 _Efficient Non-Sampling Factorization Machines for OptimalContext-Aware Recommendation_ 里面，后来顺藤摸瓜找到了 _Efficient Neural Matrix Factorization without Sampling for Recommendation_ 。但是我意识到，这个Loss其实不止针对FM，任何可以把用户和物品变成向量，最后用内积评分的模型都可以采用这个Loss。
 

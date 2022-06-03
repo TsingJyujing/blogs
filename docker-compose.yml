@@ -1,0 +1,13 @@
+version: "3"
+services:
+  gitbook_serve:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tsingjyujing/gitbook-serve
+    tty: true
+    volumes:
+      - .:/book
+    command: "/usr/local/bin/gitbook serve"
+    ports:
+      - "4000:4000"
