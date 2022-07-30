@@ -27,7 +27,9 @@ Test commands:
 
 ```bash
 ffmpeg -hwaccel_output_format qsv -hwaccel qsv -i input.mp4 -c:v h264_qsv -bf 2 -b:v 6M -maxrate 24M -global_quality 25 -look_ahead 1 -pix_fmt yuv420p output.mp4
-ffmpeg -i input.mp4 -c:v libx264 -bf 2 -b:v 6M -maxrate 24M -crf 23 -movflags +faststart -pix_fmt yuv420p output.mp4 
+ffmpeg -i input.mp4 -c:v libx264 -bf 2 -b:v 7M -maxrate 24M -crf 30 -movflags +faststart -pix_fmt yuv420p output.mp4
+# Youtube compress
+ffmpeg -i input.mp4 -vf yadif,format=yuv422p -force_key_frames 'expr:gte(t,n_forced/2)' -c:v libx264 -crf ${CRF_VALUE} -maxrate 12M -bf 2 -c:a aac -ac 2 -ar 44100 -use_editlist 0 -movflags +faststart output.mp4
 ```
 
 ## Bilibili
