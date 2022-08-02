@@ -98,6 +98,28 @@
   * 搞房租贷，很多租客，被赶出来之后，得不到任何赔偿，还得继续还租金贷款。
 * 单篇文章：[恶龙般的腾讯阿里，让天下没有好做的生意](https://zhuanlan.zhihu.com/p/321639996) [「存档链接」](https://archive.vn/B8M2w)
 
+## 车企开始尝试订阅制/解锁已有硬件来持续薅用户的羊毛
+
+- [为了反击汽车里的内购，车主们开始研究破解版](https://www.huxiu.com/article/624311.html)
+  - [backup](https://instant.lvv2.com/html/e0745e9596738b792bd74dda802317c6.html)
+- [Tesla to unlock Model 3 heated steering wheel through paid OTA software update soon](https://driveteslacanada.ca/model-3/tesla-unlock-model-3-heated-steering-wheel-soon-paid-ota-software-update/)
+
+### 奔驰推出付费解锁后轮转向服务，每年收费 4998 元
+
+- [奔驰推出付费解锁后轮转向服务，每年收费 4998 元，这一做法是否合理？还有哪些信息值得关注？](https://www.zhihu.com/question/540960588)
+- [来搞笑的？！奔驰推出「付费订阅」后轮转向功能：4998 元/年](https://www.iplaysoft.com/news/5732)
+- [Mercedes-Benz Offers Yearly Rear Steer Subscription For EQS Sedan In China](https://insideevs.com/news/596076/mercedes-eqs-rear-steer-china-subscription/)
+- [Full Rear-Wheel Steering on Mercedes EQS Will Be $575 Annual Subscription in Germany: Report](https://www.thedrive.com/tech/41678/full-rear-wheel-steering-on-mercedes-eqs-will-be-575-annual-subscription-in-germany-report)
+
+## 汽车内屏幕推送广告
+
+- [独家 蔚来回应“导航界面弹广告”：属业务通知推送](https://www.163.com/dy/article/GM73G56I0519C6T9.html)
+- [蔚来汽车，请不要学习手机推送广告的那一套](https://news.yiche.com/hao/wenzhang/60180047/)
+- [车内屏幕弹“广告”，蔚来有错吗？](https://auto.sina.com.cn/zz/hy/2021-10-15/detail-iktzscyx9706457.shtml)
+- [长城哈弗H6中控弹出广告？网友调侃：开车得先冲VIP](https://new.qq.com/rain/a/20210208A0E6O800)
+- [哈弗H6启动后中控屏弹广告！网友：看完广告才能挂挡走？](https://finance.sina.com.cn/tech/2021-05-26/doc-ikftpnny5786442.shtml)
+
+
 ## [百度竞价排名事件](https://zh.wikipedia.org/wiki/%E7%99%BE%E5%BA%A6%E7%AB%9E%E4%BB%B7%E6%8E%92%E5%90%8D%E4%BA%8B%E4%BB%B6)
 
 ## 美团不退用户改签费用
