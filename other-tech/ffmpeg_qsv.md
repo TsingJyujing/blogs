@@ -72,9 +72,15 @@ cd ffmpeg
 ./configure --enable-libmfx --enable-nonfree | tee config.out
 ```
 
+注意，由于我们可能不止使用qsv的ffmpeg，所以一个比较实用的命令会是：
+
+```
+./configure --enable-libmfx --enable-nonfree --enable-gpl --enable-libx264 --enable-libx265 --enable-libvpx --enable-libopus --enable-libsvtav1 | tee config.out
+```
+
 这个时候可能会提示：`ERROR: libmfx not found`。
 
-参考这个ISSUE：https://github.com/Intel-Media-SDK/MediaSDK/issues/1822
+参考[这个ISSUE](https://github.com/Intel-Media-SDK/MediaSDK/issues/1822)
 
 只需要`export PKG_CONFIG_PATH=/opt/intel/mediasdk/lib/pkgconfig/`就可以了。
 
@@ -124,6 +130,9 @@ ffmpeg version N-105268-g8b9ef5a516 Copyright (c) 2000-2022 the FFmpeg developer
 ```
 
 在实际测试的过程中，一些选项是不能用的，比如`-pix_fmt yuv420p -crf 23`这一类的，去掉就可以。
+
+偶尔会遇到像素格式不对的问题，需要设置如此设置 `-vf hwupload=extra_hw_frames=64,scale_qsv=format=nv12`。
+但是在实际测试中，这样的转码速度会下降，不知道是不是像素格式引起的。
 
 ## 参考资料
 
