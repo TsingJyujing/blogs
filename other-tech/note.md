@@ -188,8 +188,15 @@ Replace `-ab {bitrate}` to `-ac 2 -qscale:a 4` to use VBR
 
 ### Convert to H264 mp4 file
 
-```
+```bash
 ffmpeg -vcodec h264 -acodec copy -movflags +faststart -pix_fmt yuv420p -crf 23 -i input.mp4 output.mp4
+```
+
+### Merge subtitle (srt) file and video
+
+```bash
+ffmpeg -i ${INPUT_VIDEO} -f srt -i ${SUBTITLE_FILE} -c:v copy -c:a copy -c:s srt ${OUTPUT_VIDEO}
+# -c:s can also be copy
 ```
 
 ## 树莓派
