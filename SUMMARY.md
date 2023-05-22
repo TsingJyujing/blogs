@@ -60,3 +60,4 @@
   * [甜酒酿的制作](recipe/tianjiuniang.md)
   * [香草与香料](recipe/herb_and_spice.md)
   * [皮塔饼](recipe/pita.md)
+  * [韭菜鸡蛋饼](recipe/garlic-chives-omelette.md)
