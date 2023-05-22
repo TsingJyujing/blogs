@@ -352,3 +352,26 @@ Mainly `~/.m2/settings.xml`.
 
 </settings>
 ```
+
+## Glances
+
+### 屏蔽多余的设备
+
+在使用snap的时候经常会有一些奇怪的设备，包括`loop{x}`或者是`/snap/`之类的，这个时候只要在配置文件里加上
+
+```
+[fs]
+hide=/boot.*,/snap.*
+[diskio]
+hide=loop.*
+[network]
+hide=docker.*,lo,veth.*
+```
+
+就可以屏蔽这些设备。
+
+官方文档：
+
+1. https://glances.readthedocs.io/en/latest/aoa/diskio.html
+2. https://glances.readthedocs.io/en/latest/aoa/fs.html
+3. 配置文件的位置 https://glances.readthedocs.io/en/latest/config.html
