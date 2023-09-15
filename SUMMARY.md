@@ -42,6 +42,7 @@
   * [福冈外免切替（中国驾照换日本驾照）攻略](other-tech/fukuoka-gaimenkirikae.md)
   * [记一个离谱的MySQL语句的性能问题](other-tech/mysql-optimizer-in-clause.md)
   * [拯救变砖的OpenWRT路由器](other-tech/save-my-openwrt.md)
+  * [使用FRP进行内网穿透](other-tech/frp.md)
 * [政治不正确](spam/README.md)
   * [吃屎系列：资本家如何喂员工吃屎](spam/shit-cap2employee/README.md)
     * [华为251事件记忆](spam/shit-cap2employee/huawei-251.md)
