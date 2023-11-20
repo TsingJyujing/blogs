@@ -34,18 +34,23 @@ opkg install luci-app-frpc
 
 ## 服务器配置
 
-首先下载frp，然后解压：`tar -xzvf frp_0.51.3_linux_amd64.tar.gz`
+首先下载frp，然后解压：`tar -xzvf frp_0.52.3_linux_arm64.tar.gz`
 
-随后将文件复制`frps`到`/usr/bin`(或者任何在PATH里的目录): `cp frp_0.51.3_linux_amd64/frps /usr/bin/`
+随后将文件复制`frps`到`/usr/bin`(或者任何在PATH里的目录): `cp frp_0.52.3_linux_arm64/frps /usr/bin/`
 
 准备以下文件：
 
-`/etc/frp/frps.ini`
+`/etc/frp/frps.toml`
 
-```
-[common]
-bind_port = 7000
-token = 自己设置想要的密码
+```toml
+bindPort = 7000
+auth.method = "token"
+auth.token = "自己设置想要的密码"
+# 以下配置为可选项
+webServer.addr = "0.0.0.0"
+webServer.port = 7500
+webServer.user = "admin"
+webServer.password = "自己设置想要的管理员密码"
 ```
 
 `/etc/systemd/system/frps.service`：
@@ -58,7 +63,7 @@ Wants = network.target
 
 [Service]
 Type = simple
-ExecStart = /usr/bin/frps -c /etc/frp/frps.ini
+ExecStart = /usr/bin/frps -c /etc/frp/frps.toml
 
 [Install]
 WantedBy = multi-user.target
@@ -85,24 +90,25 @@ ufw allow 443
 
 ## 客户端配置
 
-同样是下载软件后复制`frpc`到`/usr/bin`(或者任何在PATH里的目录): `cp frp_0.51.3_linux_amd64/frpc /usr/bin/`
+同样是下载软件后复制`frpc`到`/usr/bin`(或者任何在PATH里的目录): `cp frp_0.52.3_linux_arm64/frpc /usr/bin/`
 
 准备配置文件和服务文件：
 
-`/etc/frp/frpc.ini`
+`/etc/frp/frpc.toml`
 
-```
-[common]
-server_addr = VPS的地址
-server_port = 7000
-token = 自己设置想要的密码
-tls_enable = true
+```toml
+serverAddr = "VPS的地址"
+serverPort = 7000
+auth.method = "token"
+auth.token = "自己设置想要的密码"
 
-[自己给个名字]
-type = tcp
-local_ip = 目标机器的地址
-local_port = 目标机器的端口
-remote_port = 想要在VPS上暴露的端口
+# 本段落可以配置多个
+[[proxies]]
+name = "自己给个名字"
+type = "tcp"
+localIP = "目标机器的地址"
+localPort = 目标机器的端口
+remotePort = 想要在VPS上暴露的端口
 ```
 
 `/etc/systemd/system/frpc.service`
@@ -116,8 +122,8 @@ Type=simple
 DynamicUser=yes
 Restart=on-failure
 RestartSec=5s
-ExecStart=/usr/bin/frpc -c /etc/frp/frpc.ini
-ExecReload=/usr/bin/frpc reload -c /etc/frp/frpc.ini
+ExecStart=/usr/bin/frpc -c /etc/frp/frpc.toml
+ExecReload=/usr/bin/frpc reload -c /etc/frp/frpc.toml
 LimitNOFILE=1048576
 [Install]
 WantedBy=multi-user.target
