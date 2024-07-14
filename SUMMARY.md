@@ -27,6 +27,7 @@
 * Web开发相关技术
   * [JWT简介](web/jwt.md)
 * [技术杂文](other-tech/README.md)
+  * [React-Script转Vite时引用路径的问题](other-tech/vite-import-path.md)
   * [Let's encrypt -- 让我们一起愉快的使用HTTPS](other-tech/https.md)
   * [干掉吸血雷，重塑和谐P2P环境](other-tech/fuck-thunder.md)
   * [开源CAN总线信号可编程台架](other-tech/can-panel.md)
