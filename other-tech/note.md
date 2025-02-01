@@ -375,3 +375,15 @@ hide=docker.*,lo,veth.*
 1. https://glances.readthedocs.io/en/latest/aoa/diskio.html
 2. https://glances.readthedocs.io/en/latest/aoa/fs.html
 3. 配置文件的位置 https://glances.readthedocs.io/en/latest/config.html
+
+## Git
+
+### 自动使用SSH代替HTTP
+
+来源：https://www.digitalocean.com/community/tutorials/how-to-use-a-private-go-module-in-your-own-project
+
+在`~/.gitconfig`加入这一段：
+```ini
+[url "ssh://git@github.com/"]
+insteadOf = https://github.com/
+```
