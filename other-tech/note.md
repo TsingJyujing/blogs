@@ -383,7 +383,10 @@ hide=docker.*,lo,veth.*
 来源：https://www.digitalocean.com/community/tutorials/how-to-use-a-private-go-module-in-your-own-project
 
 在`~/.gitconfig`加入这一段：
+
 ```ini
 [url "ssh://git@github.com/"]
 insteadOf = https://github.com/
 ```
+
+不仅可以用于导入私有的Go模块，还可以用于Brew安装的时候自动拉取Repo。
