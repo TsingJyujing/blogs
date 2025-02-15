@@ -65,3 +65,4 @@
   * [香草与香料](recipe/herb_and_spice.md)
   * [皮塔饼](recipe/pita.md)
   * [韭菜鸡蛋饼](recipe/garlic-chives-omelette.md)
+  * [牛肉蔬菜汤](recipe/beef-soup.md)
