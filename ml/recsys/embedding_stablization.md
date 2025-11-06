@@ -48,16 +48,16 @@
 - User Embedding: W 是一个 m x e 矩阵
 - Item Embedding: T 是一个 n x e 矩阵
 
-评分矩阵S就可以这样算出： $S=TW^T$
+评分矩阵S就可以这样算出： $$S=TW^T$$
 
 我们不要急，先对User和Item的Embedding做一个QR分解：
 
-- $T=Q_TR_T$
-- $W=Q_WR_W$
+- $$T=Q_TR_T$$
+- $$W=Q_WR_W$$
 
-我们就得到了$Q_T$和$Q_W$两个正交的向量组，和R_T与R_W两个上三角矩阵，别急，等下会有用：
+我们就得到了$$Q_T$$和$$Q_W$$两个正交的向量组，和$$R_T$$与$$R_W$$两个上三角矩阵，别急，等下会有用：
 
-如果一个正常的分解$\text{SVD}(S)=\text{SVD}(TW^T)=U \Sigma V$
+如果一个正常的分解$$\text{SVD}(S)=\text{SVD}(TW^T)=U \Sigma V$$
 
 我们就可以用刚才QR分解的结果去凑SVD分解的结果：
 
@@ -84,7 +84,7 @@ M_W=R_W^{-1} V_R^T \Sigma^{-1/2}$$
 
 事情还没有完，但是还可以更简单一点：
 
-- 因为 $R_TR_W^T = U_R \Sigma V_R$
+- 因为 $$R_TR_W^T = U_R \Sigma V_R$$
 - 所以 $R_TR_W^T V_R^T = U_R \Sigma V_R V_R^T$
 - 因为 $V_R V_R^T = I$ (SVD的性质)
 - 所以 $R_TR_W^T V_R^T = U_R \Sigma$
