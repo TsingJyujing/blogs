@@ -78,8 +78,10 @@ $$S=Q_T \times SVD(R_TR_W^T) \times Q_W^T=Q_T U_R \Sigma V_R Q_W^T$$
 - $$TM_T = U \Sigma^{-1/2}$$
 - $$WM_W= V^T\Sigma^{-1/2}$$
 
-$$M_T=R_T^{-1} U_R \Sigma^{1/2} \\\\
-M_W=R_W^{-1} V_R^T \Sigma^{-1/2}$$
+我们求得变换矩阵：
+
+- $$M_T=R_T^{-1} U_R \Sigma^{1/2}$$
+- $$M_W=R_W^{-1} V_R^T \Sigma^{-1/2}$$
 
 
 事情还没有完，但是还可以更简单一点：
