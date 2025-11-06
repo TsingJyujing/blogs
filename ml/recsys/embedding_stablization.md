@@ -119,4 +119,4 @@ $$\underset{\Omega}{\text{minimize}}\quad \|\Omega A-B\|_F$$
 
 为什么用Spark举例呢？虽说SVD或者Orthogonal Procrustes都是numpy和scipy自带的算法，但是在工业中肯定没法直接计算。Embedding一般会存储在某些分布式存储中，比如HDFS，或者某个HIVE表。把两个矩阵下载下来就很费工夫。最好的办法是直接在Spark里面分布式的把计算完成。
 
-（写累了，未完待续å）
+（写累了，未完待续）
