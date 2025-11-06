@@ -111,9 +111,7 @@ $$S=Q_T \times SVD(R_TR_W^T) \times Q_W^T=Q_T U_R \Sigma V_R Q_W^T$$
 
 简单来说，就是求一个正交矩阵（变换）$$\Omega$$，使得B和变换过的A尽可能接近。
 
-$$\begin{aligned}
-   \underset{\Omega}{\text{minimize}}\quad & \|\Omega A-B\|_F
-\end{aligned}$$
+$$\underset{\Omega}{\text{minimize}}\quad \|\Omega A-B\|_F$$
 
 这个是有解析解的，只要对A和B的Gramian Matrix做SVD分解，脱去中间的特征值对角矩阵$$\Sigma$$以后把U和V乘起来就可以了。
 
