@@ -63,7 +63,7 @@
 
 $$\text{SVD}(S)=Q_T R_T (Q_WR_W)^T=Q_T (R_T R_W^T) Q_W^T$$
 
-到这一步就很清晰了，我们只要对中间的小核$R_TR_W^T$做SVD就可以了
+到这一步就很清晰了，我们只要对中间的小核$$R_TR_W^T$$做SVD就可以了
 
 $$S=Q_T \times SVD(R_TR_W^T) \times Q_W^T=Q_T U_R \Sigma V_R Q_W^T$$
 
@@ -73,10 +73,10 @@ $$S=Q_T \times SVD(R_TR_W^T) \times Q_W^T=Q_T U_R \Sigma V_R Q_W^T$$
 - $$U =Q_TU_R =T R_T^{-1} U_R$$
 - $$V^T=Q_W V_R^T=W R_W^{-1} V_R^T$$
 
-我们当然可以把T和W后面的东西拿出来作为变换矩阵$M_T$和$M_W$，求exe的逆矩阵也不是很麻烦，像这样：
+我们当然可以把T和W后面的东西拿出来作为变换矩阵$$M_T$$和$$M_W$$，求exe的逆矩阵也不是很麻烦，像这样：
 
-- $TM_T = U \Sigma^{-1/2}$
-- $WM_W= V^T\Sigma^{-1/2}$
+- $$TM_T = U \Sigma^{-1/2}$$
+- $$WM_W= V^T\Sigma^{-1/2}$$
 
 $$M_T=R_T^{-1} U_R \Sigma^{1/2} \\\\
 M_W=R_W^{-1} V_R^T \Sigma^{-1/2}$$
@@ -85,14 +85,14 @@ M_W=R_W^{-1} V_R^T \Sigma^{-1/2}$$
 事情还没有完，但是还可以更简单一点：
 
 - 因为 $$R_TR_W^T = U_R \Sigma V_R$$
-- 所以 $R_TR_W^T V_R^T = U_R \Sigma V_R V_R^T$
-- 因为 $V_R V_R^T = I$ (SVD的性质)
-- 所以 $R_TR_W^T V_R^T = U_R \Sigma$
-- 所以 $R_TR_W^T V_R^T = U_R \Sigma$
-- 所以 $R_W^T V_R^T \Sigma^{-1/2} = R_T^{-1}U_R \Sigma^{1/2}$
-- 得到 $M_T=R_W^T V_R^T \Sigma^{-1/2}$
+- 所以 $$R_TR_W^T V_R^T = U_R \Sigma V_R V_R^T$$
+- 因为 $$V_R V_R^T = I$$ (SVD的性质)
+- 所以 $$R_TR_W^T V_R^T = U_R \Sigma$$
+- 所以 $$R_TR_W^T V_R^T = U_R \Sigma$$
+- 所以 $$R_W^T V_R^T \Sigma^{-1/2} = R_T^{-1}U_R \Sigma^{1/2}$$
+- 得到 $$M_T=R_W^T V_R^T \Sigma^{-1/2}$$
 
-我这里就写了$M_T$的计算，$M_W$的计算方法是一样的，就不赘述了。
+我这里就写了$$M_T$$的计算，$$M_W$$的计算方法是一样的，就不赘述了。
 
 连逆矩阵也不用求了，对角矩阵开个平方就搞定了。
 
@@ -107,13 +107,13 @@ M_W=R_T^T U_R \Sigma^{-1/2}$$
 
 这里比较简单，证明也写在Wiki上了：https://en.wikipedia.org/wiki/Orthogonal_Procrustes_problem
 
-简单来说，就是求一个正交矩阵（变换）$\Omega$，使得B和变换过的A尽可能接近。
+简单来说，就是求一个正交矩阵（变换）$$\Omega$$，使得B和变换过的A尽可能接近。
 
 $$\begin{aligned}
    \underset{\Omega}{\text{minimize}}\quad & \|\Omega A-B\|_F
 \end{aligned}$$
 
-这个是有解析解的，只要对A和B的Gramian Matrix做SVD分解，脱去中间的特征值对角矩阵$\Sigma$以后把U和V乘起来就可以了。
+这个是有解析解的，只要对A和B的Gramian Matrix做SVD分解，脱去中间的特征值对角矩阵$$\Sigma$$以后把U和V乘起来就可以了。
 
 ## Spark实战
 
