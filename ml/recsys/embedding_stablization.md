@@ -100,8 +100,8 @@ $$S=Q_T \times SVD(R_TR_W^T) \times Q_W^T=Q_T U_R \Sigma V_R Q_W^T$$
 
 反正最后得到
 
-$$M_T=R_W^T V_R \Sigma^{-1/2} \\\\
-M_W=R_T^T U_R \Sigma^{-1/2}$$
+- $$M_T=R_W^T V_R \Sigma^{-1/2}$$
+- $$M_W=R_T^T U_R \Sigma^{-1/2}$$
 
 天才。
 
