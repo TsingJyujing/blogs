@@ -8,6 +8,7 @@
     * [半监督/无监督学习收集](ml/common/semi-supervised-learning.md)
     * [收藏夹](ml/common/collection.md)
   * [推荐系统](ml/recsys/README.md)
+    * [向量稳定化](ml/recsys/embedding_stablization.md)
     * [Understanding LightGCN in a visualized way](ml/recsys/light_gcn.md)
     * [Learning To Rank 之 RankNet](ml/recsys/ranknet.md)
     * [随想： BPR Loss 与 Hinger Loss](ml/recsys/bpr_and_hinger.md)
@@ -66,3 +67,4 @@
   * [皮塔饼](recipe/pita.md)
   * [韭菜鸡蛋饼](recipe/garlic-chives-omelette.md)
   * [牛肉蔬菜汤](recipe/beef-soup.md)
+  * [红豆沙馅配方](recipe/azuki.md)
