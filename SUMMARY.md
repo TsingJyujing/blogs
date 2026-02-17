@@ -60,6 +60,7 @@
     * [90年代到21世纪初的商业环境](spam/1990s-env.md)
   * [为什么不应该用国产手机](spam/why-not-domestic-phone.md)
   * [“救救孩子”](spam/save-children.md)
+  * [2025-12-31 回乡杂记](spam/2025-12-31-hometown.md)
 * [随园食单](recipe/README.md)
   * [ボロネーゼ](recipe/spaghetti_bolognese.md)
   * [甜酒酿的制作](recipe/tianjiuniang.md)
