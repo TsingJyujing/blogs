@@ -8,6 +8,13 @@
 
 如果完全按照[Intel® Quick Sync Video Installation](https://www.intel.com/content/www/us/en/architecture-and-technology/quick-sync-video/quick-sync-video-installation.html)的指示安装，恐怕是要过错年的。文档的格式排版辣眼睛不说，而且连术语都变了，文档让你安装的MediaServerStudio，早已经变成了MediaSDK。
 
+### 2026-02-17更新
+
+这个年是彻底要过错了，我重新安装了系统，准备编译带QSV的ffmpeg，结果[MediaSDK也被废弃了](https://www.intel.com/content/www/us/en/docs/onevpl/upgrade-from-msdk/2023-1/overview.html)，现在改了个狗屁名叫甚么[Intel Video Processing Library (Intel VPL)](https://www.intel.com/content/www/us/en/developer/tools/vpl/overview.html)。不过好消息是，我再Debian下安装的ffmpeg默认支持基于libvpl的QSV编解码器了，libvpl也可以从apt直接安装了。这样就省去了我很多的事儿了。我认为这是做了一件人事，值得鼓励。
+
+所以以后只需要参考使用的部分即可，至于安装的部分，我决定留在这里，作为某大公司产品因为拍脑袋引起的产品设计混乱的一个见证。
+
+
 ## 安装Media SDK
 
 首先到Github上下载MediaSDK：https://github.com/Intel-Media-SDK/MediaSDK/releases
