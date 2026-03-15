@@ -28,6 +28,7 @@
 * [Web开发相关技术](web-kai-fa-xiang-guan-ji-shu/README.md)
   * [JWT简介](web/jwt.md)
 * [技术杂文](other-tech/README.md)
+  * [修复Linux磁盘中的坏道](other-tech/20260315-fix-bad-blocks-in-linux.md)
   * [React-Script转Vite时引用路径的问题](other-tech/vite-import-path.md)
   * [Let's encrypt -- 让我们一起愉快的使用HTTPS](other-tech/https.md)
   * [干掉吸血雷，重塑和谐P2P环境](other-tech/fuck-thunder.md)
