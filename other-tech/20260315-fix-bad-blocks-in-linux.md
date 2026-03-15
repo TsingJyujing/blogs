@@ -82,3 +82,8 @@ SWAP分区也在同一块硬盘上，自然也会有相应的问题。
 
 有的时候如果是外部修改，硬件的UUID可能变化而加载不上，可以试试看`lsblk -f`列出所有的硬件的UUID，然后手动修改`/etc/fstab`
 
+# 参考资料
+
+- https://www.tecmint.com/check-linux-hard-disk-bad-sectors-bad-blocks/
+- https://www.man7.org/linux/man-pages/man8/mkswap.8.html
+
