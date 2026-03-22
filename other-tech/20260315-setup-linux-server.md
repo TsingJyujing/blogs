@@ -94,9 +94,25 @@ NAME       TYPE      SIZE   USED PRIO
 /dev/zram0 partition 7.7G 539.8M  100
 ```
 
-
-
 ## 安装软件
+
+### 常用软件
+
+```shell
+
+sudo apt install -y \
+    tree htop ncdu git vim zsh wget curl \
+    keyd keyd-application-mapper \
+    ffmpeg pipx ibus-mozc ibus-pinyin \
+    build-essential cmake intel-gpu-tools
+
+
+pipx install "glances[all]"
+pipx install ruff
+pipx install uv
+```
+
+需要把~/.local/bin添加到PATH里面去，我是zsh所以修改~/.zshrc。
 
 ### Docker
 
