@@ -40,6 +40,62 @@ HandleLidSwitchDocked=ignore
 ```
 
 
+## swap相关设置
+
+### swap file
+
+如果是固态硬盘，推荐不要单独设置SWAP分区，而是使用SWAP File，这样调整起来比较灵活一点。
+
+假设当前电脑内没有任何SWAP分区：
+
+```shell
+# 按照你的内存大小去创建即可，一般和内存一样大
+sudo fallocate -l 16G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+
+# 立刻挂载
+sudo swapon /swapfile
+sudo swapon --show
+```
+
+如果需要启动的时候自动挂载，编辑文件：`sudo vim /etc/fstab`
+
+添加: `/swapfile    none    swap    sw  0   0`
+
+### swapiness设置
+
+一般来说，SWAP的速度总是不如正经内存的，如果过于积极的使用SWAP会降低系统的性能，所以我们把这个数值调整的小一些：
+
+- 查看数值：`cat /proc/sys/vm/swappiness`
+- 临时更改：`sudo sysctl vm.swappiness=10`
+- 永久设置：`sudo vim /etc/sysctl.conf` 添加：`vm.swappiness=10`
+
+
+### zram
+
+如果系统的CPU有富余，可以设置zram，就是将一部分内存进行压缩，用CPU换内存空间。
+
+其实Mac也会干这个事情，只是已经默认集成到了系统中不需要设置罢了。
+
+
+```shell
+sudo apt install zram-tools
+sudo systemctl enable zramswap
+sudo systemctl start zramswap
+```
+
+启用以后可以看到：`swapon --show`
+
+```
+swapon --show
+NAME       TYPE      SIZE   USED PRIO
+/swapfile  file       16G 379.3M   -2
+/dev/zram0 partition 7.7G 539.8M  100
+```
+
+
+
 ## 安装软件
 
 ### Docker
