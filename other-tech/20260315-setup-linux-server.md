@@ -69,7 +69,8 @@ sudo swapon --show
 
 - 查看数值：`cat /proc/sys/vm/swappiness`
 - 临时更改：`sudo sysctl vm.swappiness=10`
-- 永久设置：`sudo vim /etc/sysctl.conf` 添加：`vm.swappiness=10`
+- 永久设置：`sudo vim /etc/sysctl.d/99-custom.conf` 添加：`vm.swappiness=10`
+  - 注：`/etc/sysctl.d/99-custom.conf`只是一个例子。
 
 
 ### zram
