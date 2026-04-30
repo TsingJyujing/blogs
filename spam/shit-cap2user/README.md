@@ -18,6 +18,11 @@
     * 男子因发布华为Mate20 Pro屏幕泛绿，坐了8个月牢？ [「原链接」](https://kuaibao.qq.com/s/20190722A0UIVA00) [「存档链接」](https://archive.vn/PQDOL)
   * 退换货二次出售
   * 植入后台收集用户数据
+  * 百万粉丝数码博主“王员外”（本名王文龙）因5年前（约2020-2021年）发布的4条微博，被华为终端公司报案，最终因“损害商业信誉罪”被二审终审认定有罪，但免予刑事处罚。
+    * [王员外案件梳理](https://zhuanlan.zhihu.com/p/1882981738411702124)
+      * [王员外案件梳理-备份链接](https://archive.vn/5DK48)
+    * [王员外案申诉请求纠正](https://www.sina.cn/news/detail/5285731780265003.html)
+      * [王员外案申诉请求纠正-备份链接](https://archive.vn/bTI9i)
 * 京东 退换货二次出售（二手东名字来源）
 * 西部数据 NAS（红）盘采用SMR技术
 * IO DATA 采用廉价盘（疑似SMR）作为NAS存储用，并且定价高昂
@@ -90,6 +95,11 @@
     * ![](../../.gitbook/assets/2021-01-13-15-11-31.png)
     * ![](../../.gitbook/assets/2021-01-13-15-11-57.png)
     * [拼多多回应“删除用户照片”：删除的是编辑前的原图，将做产品改进](https://www.guancha.cn/ChanJing/2021_01_12_577679.shtml)
+  * 拼多多向用户的手机里塞入后门（内嵌提权代码+动态下发dex）
+    * [Github链接](https://github.com/davinci1010/pinduoduo_backdoor)
+    * [Github备份链接](https://archive.vn/N4ate)
+    * [「 深蓝洞察 」2022 年度最“不可赦”漏洞 ](https://mp.weixin.qq.com/s/P_EYQxOEupqdU0BJMRqWsw)
+    * [「 深蓝洞察 」2022 年度最“不可赦”漏洞 -备份链接](https://archive.md/ahCyY)
 * 最近制造的拖拉机越来越难以自己修理，中西部农户更加青睐40年前的老拖拉机
   * [「原链接」](https://www.startribune.com/for-tech-weary-midwest-farmers-40-year-old-tractors-now-a-hot-commodity/566737082/) [「存档链接」](https://archive.vn/gySMm)
 * 蛋壳公寓（国内其余长租公寓公司大多存在类似现象）
