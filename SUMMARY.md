@@ -28,6 +28,7 @@
 * [Web开发相关技术](web-kai-fa-xiang-guan-ji-shu/README.md)
   * [JWT简介](web/jwt.md)
 * [技术杂文](other-tech/README.md)
+  * [在Linux读取并且监控APC UPS的状态](other-tech/20260501-apc-ups-linux.md)
   * [在OpenWRT路由器上配置Cloudflare DDNS](other-tech/20260430-cloudflare-ddns-on-openwrt.md)
   * [2026年3月15日 搭建Linux服务器时候的备忘录](other-tech/20260315-setup-linux-server.md)
   * [修复Linux磁盘中的坏道](other-tech/20260315-fix-bad-blocks-in-linux.md)
