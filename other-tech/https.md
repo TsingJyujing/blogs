@@ -84,6 +84,62 @@ acme.sh --issue --dns dns_ali -d example.com -d www.example.com
 
 这样就可以随时保持更新了，如果你觉得心里不舒服，可以修改或者删除。 所有的东西都放在：`/home/[你的用户名]/.acme.sh` 里面，移除也很方便。
 
+## 自动下载并且更新泛解析域名
+
+（这是来自2026年5月1日的更新）我现在把域名迁移到Cloudflare上了，正好[有位大神写了个脚本](https://github.com/kavehbc/free-ssl-cloudflare)，可以自动更新泛解析域名的证书。 
+
+只需要创建一个有读写DNS权限的token，设置如下的Docker Compose就好：
+
+```yaml
+services:
+  wildcard-ssl:
+    image: kavehbc/free-ssl-cloudflare
+    container_name: wildcard-ssl
+    environment:
+      - CRON_INTERVAL=0 2 * * *
+      - DOMAIN=your-domain.com
+      - CLOUDFLARE_API_TOKEN=YOUR-TOKEN-HERE
+      - SSL_EMAIL=your-mail-addr@something.com
+      - AUTO_RENEW=true
+    volumes:
+      - ./letsencrypt:/etc/letsencrypt
+    restart: unless-stopped
+```
+
+稍等片刻就可以在letsencrypt下面看到你的证书了：
+
+```
+letsencrypt
+├── accounts
+│   └── acme-v02.api.letsencrypt.org
+│       └── directory
+│           └── 3f8ed3d7ca389e73c1d931a9e058fa82
+│               ├── meta.json
+│               ├── private_key.json
+│               └── regr.json
+├── archive
+│   └── tsingjyujing.com
+│       ├── cert1.pem
+│       ├── chain1.pem
+│       ├── fullchain1.pem
+│       └── privkey1.pem
+├── cloudflare.ini
+├── live
+│   ├── README
+│   └── tsingjyujing.com
+│       ├── cert.pem -> ../../archive/tsingjyujing.com/cert1.pem
+│       ├── chain.pem -> ../../archive/tsingjyujing.com/chain1.pem
+│       ├── fullchain.pem -> ../../archive/tsingjyujing.com/fullchain1.pem
+│       ├── privkey.pem -> ../../archive/tsingjyujing.com/privkey1.pem
+│       └── README
+├── renewal
+│   └── tsingjyujing.com.conf
+└── renewal-hooks
+    ├── deploy
+    ├── post
+    └── pre
+```
+
 ## Nginx 配置
 
 有了证书以后，我们可以给HTTP升级了！
