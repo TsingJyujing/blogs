@@ -66,6 +66,7 @@
   * [“救救孩子”](spam/save-children.md)
   * [2025-12-31 回乡杂记](spam/2025-12-31-hometown.md)
   * [2026-04-20 AI所感](spam/2026-04-20-ai-thinkings.md)
+  * [2026-05-04 日本的“儿童模特”生意](spam/20260504-best-kids-audition.md)
 * [随园食单](recipe/README.md)
   * [ボロネーゼ](recipe/spaghetti_bolognese.md)
   * [甜酒酿的制作](recipe/tianjiuniang.md)
