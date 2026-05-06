@@ -16,3 +16,4 @@ _book
 *.pdf
 .DS_Store
 /draft/
+/dev/
