@@ -37,7 +37,7 @@
   * [用Rust开发AVR单片机](other-tech/rust-avr.md)
   * [React-Script转Vite时引用路径的问题](other-tech/vite-import-path.md)
 * [量化交易](quant/README.md)
-* [计算机技术](tech/README.md)
+* [零零碎碎的技术文章](tech/README.md)
   * [网络](tech/network/README.md)
     * [Let's encrypt -- 让我们一起愉快的使用HTTPS](tech/network/https.md)
     * [在OpenWRT路由器上配置Cloudflare DDNS](tech/network/20260430-cloudflare-ddns-on-openwrt.md)
