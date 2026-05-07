@@ -49,6 +49,7 @@
     * [为FFMPEG添加Intel QSV支持](tech/ffmpeg/ffmpeg_qsv.md)
     * [视频压制技术笔记](tech/ffmpeg/video-compress.md)
   * [数据库技术](tech/database/README.md)
+    * [为PostgreSQL配置SSL加密](tech/database/postgresql-ssl.md)
     * [记一个离谱的MySQL语句的性能问题](tech/database/mysql-optimizer-in-clause.md)
   * [Linux](tech/linux/README.md)
     * [在Linux读取并且监控APC UPS的状态](tech/linux/20260501-apc-ups-linux.md)
