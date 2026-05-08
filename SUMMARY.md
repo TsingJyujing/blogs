@@ -69,6 +69,7 @@
   * [韭菜鸡蛋饼](z-recipe/garlic-chives-omelette.md)
   * [香草与香料](z-recipe/herb_and_spice.md)
 * [政治不正确](z-spam/README.md)
+  * [关于中国最近一些强奸案的感想](z-spam/2026-03-22-rape-case-in-china.md)
   * [日本疫情相关记忆](z-spam/jp_covid_19/README.md)
     * [广岛市开展约80万人的大规模PCR检查](z-spam/jp_covid_19/hiroshima_wide_pcr.md)
   * [日本的“儿童模特”生意](z-spam/20260504-best-kids-audition.md)
