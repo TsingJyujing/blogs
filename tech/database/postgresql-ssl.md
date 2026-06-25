@@ -112,7 +112,7 @@ hostssl	all	all	all	scram-sha-256
 
 这样就会完整的校验服务器的证书是不是有效再决定是否通信了。
 
-### Python(psysopg3)
+### Python(psycopg3)
 
 为了确保我们有所有CA的根证书，首先安装[certifi](https://pypi.org/project/certifi/)包。
 

@@ -10,7 +10,7 @@
 
 ### 2026-02-17更新
 
-这个年是彻底要过错了，我重新安装了系统，准备编译带QSV的ffmpeg，结果[MediaSDK也被废弃了](https://www.intel.com/content/www/us/en/docs/onevpl/upgrade-from-msdk/2023-1/overview.html)，现在改了个狗屁名叫甚么[Intel Video Processing Library (Intel VPL)](https://www.intel.com/content/www/us/en/developer/tools/vpl/overview.html)。不过好消息是，我再Debian下安装的ffmpeg默认支持基于libvpl的QSV编解码器了，libvpl也可以从apt直接安装了。这样就省去了我很多的事儿了。我认为这是做了一件人事，值得鼓励。
+这个年是彻底要过错了，我重新安装了系统，准备编译带QSV的ffmpeg，结果[MediaSDK也被废弃了](https://www.intel.com/content/www/us/en/docs/onevpl/upgrade-from-msdk/2023-1/overview.html)，现在改了个狗屁名叫甚么[Intel Video Processing Library (Intel VPL)](https://www.intel.com/content/www/us/en/developer/tools/vpl/overview.html)。不过好消息是，我在Debian下安装的ffmpeg默认支持基于libvpl的QSV编解码器了，libvpl也可以从apt直接安装了。这样就省去了我很多的事儿了。我认为这是做了一件人事，值得鼓励。
 
 所以以后只需要参考使用的部分即可，至于安装的部分，我决定留在这里，作为某大公司产品因为拍脑袋引起的产品设计混乱的一个见证。
 

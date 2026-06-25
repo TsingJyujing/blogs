@@ -61,5 +61,5 @@
 ## 参考
 
 * [Making Convolutional Networks Shift-Invariant Again](https://arxiv.org/pdf/1904.11486.pdf)
-* [Why do deep convolutional networks generalize so poorly tosmall image transformations?](https://arxiv.org/pdf/1805.12177.pdf)
+* [Why do deep convolutional networks generalize so poorly to small image transformations?](https://arxiv.org/pdf/1805.12177.pdf)
 * [Shiftable multiscale transforms](http://persci.mit.edu/pub_pdfs/simoncelli_shift.pdf)

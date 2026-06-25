@@ -4,7 +4,7 @@ In this article, I'm going to introduce LightGCN, a new algorithm for collaborat
 
 ## What's LightGCN
 
-LightGCN is a shorten of Light Graph Convolutional Neural-network, it's a new approach for collaborative filtering which published in SIGIR 2020.
+LightGCN is short for Light Graph Convolutional Neural-network, it's a new approach for collaborative filtering which published in SIGIR 2020.
 
 So, let's talk about what's the graph, what's the convolution and why it's called "light".
 
@@ -36,7 +36,7 @@ Non-euclidean graph means we don’t have a certain neighborhood number. But in 
 
 Here's the solution, we just update the current node by doing a weighted sum operation from all neighbor nodes and do it again in the next layer. Then we use multi-layers to obtain high-order connectivity.
 
-So the "kernel" if GCN basically is $$w_{ui}$$. In my POV, it’s a low-pass filter.
+So the "kernel" of GCN basically is $$w_{ui}$$. In my POV, it’s a low-pass filter.
 
 Let's compare it with convolutional operation on image: it looks weird. It seems like fixing the convolutional kernel but adjusting the input signal. (Even it’s not a big deal since convolution operation is commutative.)
 
