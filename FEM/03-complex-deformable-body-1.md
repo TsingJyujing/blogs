@@ -76,7 +76,7 @@
 
 ![](../.gitbook/assets/vlcsnap-2021-05-05-17h31m17s929.png)
 
-满足\[变形协调条件]\([https://en.wikipedia.org/wiki/Compatibility\_(mechanics))才能说这个位移场是一个物理上有效的位移场，因为在这里的分析中，材料不会撕裂，更不会重叠，一定是连续的。](https://en.wikipedia.org/wiki/Compatibility_\(mechanics\)\)%E6%89%8D%E8%83%BD%E8%AF%B4%E8%BF%99%E4%B8%AA%E4%BD%8D%E7%A7%BB%E5%9C%BA%E6%98%AF%E4%B8%80%E4%B8%AA%E7%89%A9%E7%90%86%E4%B8%8A%E6%9C%89%E6%95%88%E7%9A%84%E4%BD%8D%E7%A7%BB%E5%9C%BA%EF%BC%8C%E5%9B%A0%E4%B8%BA%E5%9C%A8%E8%BF%99%E9%87%8C%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%AD%EF%BC%8C%E6%9D%90%E6%96%99%E4%B8%8D%E4%BC%9A%E6%92%95%E8%A3%82%EF%BC%8C%E6%9B%B4%E4%B8%8D%E4%BC%9A%E9%87%8D%E5%8F%A0%EF%BC%8C%E4%B8%80%E5%AE%9A%E6%98%AF%E8%BF%9E%E7%BB%AD%E7%9A%84%E3%80%82)
+满足[变形协调条件](https://en.wikipedia.org/wiki/Compatibility_%28mechanics%29)才能说这个位移场是一个物理上有效的位移场，因为在这里的分析中，材料不会撕裂，更不会重叠，一定是连续的。
 
 说实话我没法从直观上理解这个方程，只能从数学上理解，如果每一个单元都按照第一章图画的那样变形（矩形变菱形），我们可以从位移推导出三个应变量的公式，但是2个数值映射到3个数值，一定有一个数值是多余的，这个就是切应变（当然也可以是其它的，只不过我觉得切应变孤单好欺负）。
 

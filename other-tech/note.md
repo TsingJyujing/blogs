@@ -190,7 +190,7 @@ def lazy_property(func):
     return _lazy_property
 ```
 
-Comparing with the lazy, it more like cache the result, maybe can also simply replaced by `lru_cache`. We have to ensure the return value won't change while using it.
+Comparing with the lazy, it's more like cache the result, maybe can also simply be replaced by `lru_cache`. We have to ensure the return value won't change while using it.
 
 ### Example of Async wait
 
@@ -255,7 +255,7 @@ ffmpeg -i ${INPUT_VIDEO} -f srt -i ${SUBTITLE_FILE} -c:v copy -c:a copy -c:s srt
 1. 只能使用32位的系统
 2. 在`/boot/firmware/config.txt`里增加`start_x=1`
 3. 执行 `sudo snap install picamera-streaming-demo`以后重启系统
-4. 打开 http://:8000/ 即可查看
+4. 打开 http://<树莓派IP>:8000/ 即可查看
 
 参考资料：
 

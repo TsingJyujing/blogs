@@ -10,14 +10,14 @@ AB测试自不必说，主要测试新的算法在指定的监测指标上又没
 
 AB测试中出现两组天然存在指标差异带来的更大问题是，AA测试通不过，有的时候换个分组的Salt Key结果就不一样了。造成这个问题的原因是，随着采样数据的上升，AA测试中两组的方差都逐渐收敛，这个时候两组之间的天然差异会被“固化”，这个时候AA测试就失败了。
 
-这个问题困扰我们挺久，但是到我们之前的AA测试只有Pass/Fail两个结果，所以我们考虑不妨**把AA测试变成标定AB测试的工具**，故事就从这里开始了。
+这个问题困扰我们挺久，考虑到我们之前的AA测试只有Pass/Fail两个结果，所以不妨**把AA测试变成标定AB测试的工具**，故事就从这里开始了。
 
 ## 改善
 
 假设在一次试验（或者试验的某个片段中）收集到如下数据：
 
-| Group       | Variable | Comment  |
-| ----------- | -------- | -------- |
+| Group       | Variable | Comment          |
+| ----------- | -------- | ---------------- |
 | T(reatment) | $$N_1$$  | 测试组的展示次数 |
 | T(reatment) | $$C_1$$  | 测试组的点击次数 |
 | C(ontrol)   | $$N_2$$  | 对照组的展示次数 |
@@ -53,7 +53,7 @@ AA测试，主要是估计一个提升的下确界，也就是我们最少要提
 
 ```python
 from scipy.stats import norm
-​​from math import sqrt
+from math import sqrt
 
 def get_minimal_lift(C_1, N_1, C_2, N_2, confidence_level):
     mean_1 = C_1 / N_1
@@ -78,7 +78,7 @@ $$P(x_1-x_2 \ge \epsilon)=P(x_3 \ge \epsilon)=1-\Phi_{\mu_1-\mu_2,\sigma_1^2+\si
 
 ```python
 from scipy.stats import norm
-​​from math import sqrt
+from math import sqrt
 
 def get_passed_prob(C_1, N_1, C_2, N_2, epsilon):
     mean_1 = C_1 / N_1

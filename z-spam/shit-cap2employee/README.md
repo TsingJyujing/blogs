@@ -6,7 +6,7 @@
 
 ## Other Projects
 
-其它一些记录劳动者被欺负的项目：
+其他一些记录劳动者被欺负的项目：
 
 * [校招污点公司记录](https://github.com/ShameCom/ShameCom)
 * [996icu/996.ICU](https://github.com/996icu/996.ICU)

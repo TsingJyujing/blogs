@@ -49,7 +49,7 @@ Windows就更不要说了，我是Win95开始的骨灰用户，写注册表调Wi
 在比如，Putty和XShell没了，但是你有原生的SSH啊，你完全可以通过SSH Config文件配置跳板机，配合ZSH的自动补全，其实效率只有更高。
 没有WinSFTP，但是scp速度更快，rsync灵活度更高，实在想用图形化，有FileZilla，事实上，用了Linux后，我都不用FileZilla了。
 
-很多时候，我们沉溺在Wdinwos下拙劣的模仿者里，回过头来看一看Linux，其实最佳实践已经给我们准备好了。
+很多时候，我们沉溺在Windows下拙劣的模仿者里，回过头来看一看Linux，其实最佳实践已经给我们准备好了。
 
 - 视频播放：不要说了，VLC永远的神，不止在Linux上，Mac和Win上我也都用。
 - Office系列软件：除了自带的 Libra Office，还可以选择 WPS Linux版的，M$ Office可以用在线的，还有Google Doc，腾讯文档等等。
