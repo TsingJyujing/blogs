@@ -52,7 +52,7 @@ def collect_structure(
     if depth == 0:
         return sorted(nodes, key=lambda node: node["path"])
     else:
-        return sorted(nodes, key=lambda node: node["mtime"], reverse=True)
+        return sorted(nodes, key=lambda node: node["path"], reverse=False)
 
 
 def generate_markdown_lines(
