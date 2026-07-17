@@ -70,7 +70,7 @@ def generate_markdown_lines(
 
 if __name__ == "__main__":
     root_path = Path.cwd()
-    ignore_set = {"img", "node_modules", "gen_summary.py", ".git", ".vscode"}
+    ignore_set = {"img", "node_modules", "gen_summary.py", ".git", ".vscode", "AGENTS.md"}
     with (root_path / "SUMMARY.md").open("w", encoding="utf-8") as fp:
         fp.write("# Table of contents\n\n")
         if (root_path / "README.md").exists():

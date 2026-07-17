@@ -27,6 +27,7 @@
   * [强化学习相关博客](ml/rl/README.md)
     * [Re：从零开始的Multi-armed Bandit](ml/rl/mab-summary.md)
 * [技术杂文](other-tech/README.md)
+  * [Jeff是如何被同事发明的DSL残害的](other-tech/20260717-dsl.md)
   * [家用Airflow搭建指南](other-tech/airflow.md)
   * [开源CAN总线信号可编程台架](other-tech/can-panel.md)
   * [为什么我劝你不要使用云计算？](other-tech/cloud-or-not.md)
