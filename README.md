@@ -16,6 +16,6 @@
 
 ## 源码
 
-这个博客的源代码在：[TsingJyujing/blogs](https://github.com/TsingJyujing/blogs)，你可以随时将源代码克隆到本地，然后根据dockerfile里记录的方法编译。 也可以以我这个博客为模版写你自己的博客。
+这个博客的源代码在：[TsingJyujing/blogs](https://github.com/TsingJyujing/blogs)。
 
 目前不支持RSS订阅，但是你可以关注这个Github项目Commit的RSS。
