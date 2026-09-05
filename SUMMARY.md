@@ -76,6 +76,7 @@
   * [回乡杂记](z-spam/2025-12-31-hometown.md)
   * [关于中国最近一些强奸案的感想](z-spam/2026-03-22-rape-case-in-china.md)
   * [AI所感](z-spam/2026-04-20-ai-thinkings.md)
+  * [让我们试着发明一个传统医学](z-spam/2026-09-05-traditional-medicine.md)
   * [日本的“儿童模特”生意](z-spam/20260504-best-kids-audition.md)
   * [互联网政治圈观察日志](z-spam/bull-shit-politics.md)
   * [大学如何喂学生吃屎](z-spam/damn-university.md)
