@@ -14,6 +14,50 @@
 
 所以以后只需要参考使用的部分即可，至于安装的部分，我决定留在这里，作为某大公司产品因为拍脑袋引起的产品设计混乱的一个见证。
 
+### 2026-09-22更新
+
+我上面还是写的简单了，让我再补充一下吧。
+
+首先要确认你的ffmpeg是有qsv编码器的：
+
+```
+# ffmpeg -hide_banner -encoders | grep qsv 
+ V..... av1_qsv              AV1 (Intel Quick Sync Video acceleration) (codec av1)
+ V..... h264_qsv             H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 (Intel Quick Sync Video acceleration) (codec h264)
+ V..... hevc_qsv             HEVC (Intel Quick Sync Video acceleration) (codec hevc)
+ V..... mjpeg_qsv            MJPEG (Intel Quick Sync Video acceleration) (codec mjpeg)
+ V..... mpeg2_qsv            MPEG-2 video (Intel Quick Sync Video acceleration) (codec mpeg2video)
+ V..... vp9_qsv              VP9 video (Intel Quick Sync Video acceleration) (codec vp9)
+```
+
+然后你需要一些妙妙小依赖（记得apt update再安装）
+
+```shell
+apt install intel-media-va-driver-non-free libvpl-tools
+```
+
+至于为什么要non-free，我搜索了一下大概是这个解释：
+
+> 这源于 Debian 对软件自由的严格定义。“non-free” 并不意味着需要付费，而是指软件包中包含了不可读的二进制代码（binary blobs）。Intel 的显卡驱动为了提高效率，部分着色器代码以二进制形式提供，这不符合 Debian 的“自由”标准，因此被拆分到 non-free 仓库中。
+
+最重要的还是得安装libmfx，如果你是11代及之后的CPU的话，可以安装 `libmfx-gen1.2`，但是我的XPS是几年前买的，还是10代CPU，不支持什么oneVPL，所以需要安装下面的过时的包（Intel你做个人吧）：
+
+```shell
+wget https://deb.debian.org/debian/pool/main/i/intel-mediasdk/libmfx1_22.5.4-1_amd64.deb
+sudo apt install ./libmfx1_22.5.4-1_amd64.deb
+```
+
+最后可以简单跑一个测试指令：
+
+```shell
+ffmpeg -f lavfi -i testsrc=size=1280x720:rate=30 -t 5 -c:v h264_qsv -f null -
+```
+
+没有Conversion failed!那就是可以了。
+
+余下的部分都是历史了。
+
+---
 
 ## 安装Media SDK
 
