@@ -16,7 +16,7 @@
 ### 安装Termux
 
 首先是操作系统，我的操作系统是CalyxOS 5.14.2，一个开源的、真正自由的Android。里面没有Google原装Android那么多鬼东西。
-我之所用它，是因为几年前我刷机刷了它，懒得刷回去了。再者，我也更喜欢这种简洁干净的系统。
+我之所以用它，是因为几年前我刷机刷了它，懒得刷回去了。再者，我也更喜欢这种简洁干净的系统。
 
 不过如果只是运行Termux的话，相信别的Android系统应该也基本都可以安装。不一定要使用CalyxOS。
 
@@ -24,10 +24,10 @@
 
 #### 多余的话
 
-这里我得为F-Doird（和任何期待自由的人）来『广告』一下，Google即将在Android实施限制，任何Google认证的Android设备安装的App，其开发者必须在Google缴费注册。
+这里我得为F-Droid（和任何期待自由的人）来『广告』一下，Google即将在Android实施限制，任何Google认证的Android设备安装的App，其开发者必须在Google缴费注册。
 
 这也意味着，想要自己写一个apk分发到世界各地，不太可能了。
-当然，Google假惺惺的提供了绕过限制的方法，但是操作路径之复杂，还要等24小时（等我们自己忘了操作吗？），让分发应用收到极大的限制。
+当然，Google假惺惺的提供了绕过限制的方法，但是操作路径之复杂，还要等24小时（等我们自己忘了操作吗？），让分发应用受到极大的限制。
 而且Google也可以任意修改这些规则。
 
 我们这些用户，只是想要在自己买的设备上安装任何自己想要的应用，却要费千辛万苦。
@@ -87,7 +87,7 @@ termux-wake-lock
 
 #### 多余的话
 
-- 也没有Root权限，所以docker这种东西是想不要想（当然可以Root但是我只打算运行），如果有兴趣，请确认这个文档：[Docker on Android ](https://gist.github.com/FreddieOliveira/efe850df7ff3951cb62d74bd770dce27)
+- 也没有Root权限，所以docker这种东西是想都不要想（当然可以Root但是我只打算运行），如果有兴趣，请确认这个文档：[Docker on Android](https://gist.github.com/FreddieOliveira/efe850df7ff3951cb62d74bd770dce27)
 - 如果你想要真正的 Debian 用户空间，可以试试`pkg install proot-distro`然后`proot-distro install debian` + `proot-distro login debian`，我这次是探索直接在Android下面运行App能到什么程度，不管这个。
 
 ### 跑Prometheus
@@ -95,7 +95,7 @@ termux-wake-lock
 为什么我决定用Pixel跑Prometheus呢？主要是下面几个原因。
 
 - Prometheus完全用Go写成，Go有自己的Runtime，不依赖glibc，所以我不用重新编译（有空还是重新编译的好）
-    - 顺便一提， 编译的时候配合GOOS=android GOARCH=arm64即可。
+    - 顺便一提，编译的时候配合GOOS=android GOARCH=arm64即可。
 - 我的手机的存储跑Prometheus正好，而且还是SSD，速度快。
 - 手机自带电池，作为监控和系统，这很完美了。
 - 最近我运行在别处的Prometheus有一点死了（主要是外接硬盘的寿命差不多了）
