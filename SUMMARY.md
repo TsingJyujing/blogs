@@ -29,6 +29,7 @@
 * [技术杂文](other-tech/README.md)
   * [Jeff是如何被同事发明的DSL残害的](other-tech/20260717-dsl.md)
   * [Linux下使用任天堂手柄的体验](other-tech/20260829-linux-hid-nintendo.md)
+  * [使用Termux把Android变成一台服务器](other-tech/20261003-android-server.md)
   * [家用Airflow搭建指南](other-tech/airflow.md)
   * [开源CAN总线信号可编程台架](other-tech/can-panel.md)
   * [为什么我劝你不要使用云计算？](other-tech/cloud-or-not.md)
