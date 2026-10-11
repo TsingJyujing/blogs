@@ -114,6 +114,43 @@ termux-wake-lock
 其次要设置正确的ANDROID_API_LEVEL，可以这么获取：`export ANDROID_API_LEVEL=$(getprop ro.build.version.sdk)`
 
 
+### Android自带的开发者虚拟机
+
+应该是在去年（2025？年纪大了记不清了），Android推出了一个测试功能，可以在Android里面运行一个全须全尾儿的Debian虚拟机。
+
+只要在[开发者选项](https://developer.android.com/studio/debug/dev-options)里面开启Linux Terminal就可以享用，具体可以看[这篇文章](https://dev.to/besworks/official-linux-terminal-on-android-hkf)。
+
+我测试过了，这个虚拟机甚至可以跑Docker，和一台真正的Debian服务器没啥区别。
+
+唯一的问题是没法对外开端口，只能在Android内部访问。
+
+这一点可以说是方法很多，比如TCP Relay，我选的是干脆装一个Termux然后用ssh代理。
+以后的话可能通过内网穿透（frp?没想好）之类的方式接入家庭的内网。这样即使在外面也可以通过VPN或者我自己的Gateway接入点连接。
+
+这是我连接到我的手机的sshconfig：
+
+```
+Host pixel7a-termux
+    HostName 192.168.1.XXX
+    User droid
+    Port 8022
+    PreferredAuthentications publickey
+    ServerAliveInterval 30
+    Compression yes
+    IdentityFile ~/.ssh/id_home
+
+
+Host pixel7a
+    HostName 127.0.0.1
+    User droid
+    Port 9022
+    PreferredAuthentications publickey
+    ServerAliveInterval 30
+    Compression yes
+    IdentityFile ~/.ssh/id_home
+    ProxyCommand ssh -W %h:%p pixel7a-termux
+```
+
 ### 还能干什么？
 
 
