@@ -1,0 +1,37 @@
+baseURL: 'https://blog.tsingjyujing.com/'
+title: '清雨影的Blog'
+theme: 'hugo-book'
+locale: 'zh-CN'
+defaultContentLanguage: 'zh'
+hasCJKLanguage: true
+timeZone: 'Asia/Tokyo'
+enableRobotsTXT: true
+
+params:
+  description: '我的技术备忘录'
+  BookTheme: 'auto'
+  BookToC: true
+  BookSection: '/'
+  BookSearch: true
+  BookComments: false
+  BookDateFormat: '2006-01-02'
+  BookFavicon: 'favicon.svg'
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+    ordered: false
+  highlight:
+    style: 'nord'
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ['$$', '$$']
+            - ['\[', '\]']
+          inline:
+            - ['$', '$']
+            - ['\(', '\)']

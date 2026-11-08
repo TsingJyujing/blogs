@@ -1,0 +1,50 @@
+body {
+  min-width: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.book-page {
+  min-width: 0;
+}
+
+.book-theme-control:not([hidden]) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.book-theme-control select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--border-radius);
+  color: var(--body-font-color);
+  background: var(--gray-100);
+  font: inherit;
+}
+
+.markdown {
+  line-height: 1.8;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.toc-title {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.katex-display {
+  max-width: 100%;
+  padding-block: 0.25rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}

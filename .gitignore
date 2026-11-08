@@ -18,3 +18,9 @@ _book
 /draft/
 /dev/
 AGENTS.md
+
+/public/
+/resources/
+/.hugo_build.lock
+/.hugo_cache/
+/.playwright-mcp/

@@ -1,0 +1,3 @@
+{{- $options := dict "displayMode" (eq .Type "block") "output" "htmlAndMathml" -}}
+{{- transform.ToMath .Inner $options -}}
+{{- partial "docs/shortcodes/katex" .Page -}}
