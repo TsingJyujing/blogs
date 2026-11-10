@@ -3,6 +3,7 @@ title = '一般理论'
 date = '2020-05-05'
 draft = false
 weight = 1
+bookCollapseSection = true
 +++
 
 # 一般理论

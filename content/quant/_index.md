@@ -3,6 +3,7 @@ title = '量化交易'
 date = '2026-04-26'
 draft = false
 weight = 5
+bookCollapseSection = true
 +++
 
 # 量化交易

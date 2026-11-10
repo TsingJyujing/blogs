@@ -3,6 +3,7 @@ title = '日本疫情相关记忆'
 date = '2026-05-06'
 draft = false
 weight = 10
+bookCollapseSection = true
 +++
 
 # 日本疫情相关记忆

@@ -3,6 +3,7 @@ title = '有限单元法'
 date = '2021-05-03'
 draft = false
 weight = 1
+bookCollapseSection = true
 +++
 
 # 有限单元法

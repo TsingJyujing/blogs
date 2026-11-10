@@ -3,6 +3,7 @@ title = '吃屎系列：资本家如何喂用户吃屎'
 date = '2020-11-15'
 draft = false
 weight = 14
+bookCollapseSection = true
 +++
 
 # 吃屎系列：资本家如何喂用户吃屎
