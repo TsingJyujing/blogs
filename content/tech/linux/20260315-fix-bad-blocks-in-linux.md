@@ -18,7 +18,7 @@ weight = 1
 
 **注意**：正常的电脑请不要模仿这里的操作，如果磁盘到寿命了，应该尽快更换新的磁盘（哪怕它还能用）。
 
-关于硬盘相关的内容，请看我以前的文章：[构建家用NAS过程中的碎碎念](https://blog.tsingjyujing.com/other-tech/nas#ying-pan-hdd)
+关于硬盘相关的内容，请看我以前的文章：[构建家用NAS过程中的碎碎念](../../../other-tech/nas/#硬盘hdd)
 
 ## 方法
 

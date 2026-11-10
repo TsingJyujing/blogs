@@ -25,7 +25,7 @@ weight = 6
 
 所有用户没发生过行为的，全都是负样本。然后从里面随机采样，为每个正样本拉郎配一些负样本，就可以得到训练数据集。
 
-在这个数据集上应用Ranknet（参见这一篇：[Learning To Rank 之 RankNet](/ml/recsys/bpr_and_hinger/)），就可以训练出一个像模像样的推荐系统。
+在这个数据集上应用Ranknet（参见这一篇：[Learning To Rank 之 RankNet](../bpr_and_hinger/)），就可以训练出一个像模像样的推荐系统。
 
 可是采样也是个技术活，用户明显表示不喜欢的，采样权重是不是得高点？具体参看这一篇文章： [负样本为王：评Facebook的向量化召回算法](https://zhuanlan.zhihu.com/p/165064102)，这篇文章很好玩，我在实践中发现了和Facebook一样的结论，就是不能只用曝光未点击作为负样本，同时对负样本进行赋权也很重要。
 

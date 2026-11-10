@@ -21,7 +21,7 @@ weight = 2
 ## 用什么证书进行加密？
 
 > [!TIP] 
-> 如果对HTTPS和Let's encrypt还不熟悉的，建议先阅读这篇文章：[Let's encrypt -- 让我们一起愉快的使用HTTPS](/tech/network/https/)
+> 如果对HTTPS和Let's encrypt还不熟悉的，建议先阅读这篇文章：[Let's encrypt -- 让我们一起愉快的使用HTTPS](../../network/https/)
 
 一般来说，我们有自签名和标准的CA证书两种。我这里是推荐CA证书的。
 很多人可能会想，用一下自签名证书差不多就得了，用CA签发的证书多少有点小题大做了。但是这有可能遭到中间人攻击，数据还是会被解密。
