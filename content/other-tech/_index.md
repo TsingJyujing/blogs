@@ -1,0 +1,11 @@
++++
+title = '技术杂文'
+date = '2020-05-05'
+draft = false
+weight = 4
+bookCollapseSection = true
++++
+
+# 技术杂文
+
+一个工程师做过的难以分类的工作，和一些技术相关的碎碎念。
