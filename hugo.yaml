@@ -1,21 +1,21 @@
-baseURL: 'https://blog.tsingjyujing.com/'
-title: '清雨影的Blog'
-theme: 'hugo-book'
-locale: 'zh-CN'
-defaultContentLanguage: 'zh'
+baseURL: "https://blog.tsingjyujing.com/"
+title: "清雨影的Blog"
+theme: "hugo-book"
+locale: "zh-CN"
+defaultContentLanguage: "zh"
 hasCJKLanguage: true
-timeZone: 'Asia/Tokyo'
+timeZone: "Asia/Tokyo"
 enableRobotsTXT: true
 
 params:
-  description: '我的技术备忘录'
-  BookTheme: 'auto'
+  description: "我的技术备忘录"
+  BookTheme: "auto"
   BookToC: true
-  BookSection: '/'
+  BookSection: "/"
   BookSearch: true
   BookComments: false
-  BookDateFormat: '2006-01-02'
-  BookFavicon: 'favicon.svg'
+  BookDateFormat: "2006-01-02"
+  BookFavicon: "favicon.svg"
 
 markup:
   tableOfContents:
@@ -23,15 +23,18 @@ markup:
     endLevel: 3
     ordered: false
   highlight:
-    style: 'nord'
+    style: "nord"
   goldmark:
     extensions:
       passthrough:
         enable: true
         delimiters:
           block:
-            - ['$$', '$$']
+            - ["$$", "$$"]
             - ['\[', '\]']
           inline:
-            - ['$', '$']
+            - ["$", "$"]
             - ['\(', '\)']
+caches:
+  images:
+    dir: :cacheDir/images
