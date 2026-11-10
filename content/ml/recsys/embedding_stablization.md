@@ -1,3 +1,10 @@
++++
+title = '向量稳定化'
+date = '2025-11-06'
+draft = false
+weight = 4
++++
+
 # 向量稳定化
 
 最近接触到的一篇论文：[Orthogonal Low Rank Embedding Stabilization](https://dl.acm.org/doi/10.1145/3705328.3748141)
@@ -48,60 +55,60 @@
 - User Embedding: W 是一个 m x e 矩阵
 - Item Embedding: T 是一个 n x e 矩阵
 
-评分矩阵S就可以这样算出： $$S=TW^T$$
+评分矩阵S就可以这样算出： $S=TW^T$
 
 我们不要急，先对User和Item的Embedding做一个QR分解：
 
-- $$T=Q_TR_T$$
-- $$W=Q_WR_W$$
+- $T=Q_TR_T$
+- $W=Q_WR_W$
 
-我们就得到了$$Q_T$$和$$Q_W$$两个正交的向量组，和$$R_T$$与$$R_W$$两个上三角矩阵，别急，等下会有用：
+我们就得到了$Q_T$和$Q_W$两个正交的向量组，和$R_T$与$R_W$两个上三角矩阵，别急，等下会有用：
 
-如果一个正常的分解$$\text{SVD}(S)=\text{SVD}(TW^T)=U \Sigma V$$
+如果一个正常的分解$\text{SVD}(S)=\text{SVD}(TW^T)=U \Sigma V$
 
 我们就可以用刚才QR分解的结果去凑SVD分解的结果：
 
 $$\text{SVD}(S)=Q_T R_T (Q_WR_W)^T=Q_T (R_T R_W^T) Q_W^T$$
 
-到这一步就很清晰了，我们只要对中间的小核$$R_TR_W^T$$做SVD就可以了
+到这一步就很清晰了，我们只要对中间的小核$R_TR_W^T$做SVD就可以了
 
 $$S=Q_T \times SVD(R_TR_W^T) \times Q_W^T=Q_T U_R \Sigma V_R Q_W^T$$
 
 
 所以我们得出等价的U和V是这样的：
 
-- $$U =Q_TU_R =T R_T^{-1} U_R$$
-- $$V^T=Q_W V_R^T=W R_W^{-1} V_R^T$$
+- $U =Q_TU_R =T R_T^{-1} U_R$
+- $V^T=Q_W V_R^T=W R_W^{-1} V_R^T$
 
-我们当然可以把T和W后面的东西拿出来作为变换矩阵$$M_T$$和$$M_W$$，求e×e的逆矩阵也不是很麻烦，像这样：
+我们当然可以把T和W后面的东西拿出来作为变换矩阵$M_T$和$M_W$，求e×e的逆矩阵也不是很麻烦，像这样：
 
-- $$TM_T = U \Sigma^{-1/2}$$
-- $$WM_W= V^T\Sigma^{-1/2}$$
+- $TM_T = U \Sigma^{-1/2}$
+- $WM_W= V^T\Sigma^{-1/2}$
 
 我们求得变换矩阵：
 
-- $$M_T=R_T^{-1} U_R \Sigma^{1/2}$$
-- $$M_W=R_W^{-1} V_R^T \Sigma^{-1/2}$$
+- $M_T=R_T^{-1} U_R \Sigma^{1/2}$
+- $M_W=R_W^{-1} V_R^T \Sigma^{-1/2}$
 
 
 事情还没有完，但是还可以更简单一点：
 
-- 因为 $$R_TR_W^T = U_R \Sigma V_R$$
-- 所以 $$R_TR_W^T V_R^T = U_R \Sigma V_R V_R^T$$
-- 因为 $$V_R V_R^T = I$$ (SVD的性质)
-- 所以 $$R_TR_W^T V_R^T = U_R \Sigma$$
-- 所以 $$R_TR_W^T V_R^T = U_R \Sigma$$
-- 所以 $$R_W^T V_R^T \Sigma^{-1/2} = R_T^{-1}U_R \Sigma^{1/2}$$
-- 得到 $$M_T=R_W^T V_R^T \Sigma^{-1/2}$$
+- 因为 $R_TR_W^T = U_R \Sigma V_R$
+- 所以 $R_TR_W^T V_R^T = U_R \Sigma V_R V_R^T$
+- 因为 $V_R V_R^T = I$ (SVD的性质)
+- 所以 $R_TR_W^T V_R^T = U_R \Sigma$
+- 所以 $R_TR_W^T V_R^T = U_R \Sigma$
+- 所以 $R_W^T V_R^T \Sigma^{-1/2} = R_T^{-1}U_R \Sigma^{1/2}$
+- 得到 $M_T=R_W^T V_R^T \Sigma^{-1/2}$
 
-我这里就写了$$M_T$$的计算，$$M_W$$的计算方法是一样的，就不赘述了。
+我这里就写了$M_T$的计算，$M_W$的计算方法是一样的，就不赘述了。
 
 连逆矩阵也不用求了，对角矩阵开个平方就搞定了。
 
 反正最后得到
 
-- $$M_T=R_W^T V_R \Sigma^{-1/2}$$
-- $$M_W=R_T^T U_R \Sigma^{-1/2}$$
+- $M_T=R_W^T V_R \Sigma^{-1/2}$
+- $M_W=R_T^T U_R \Sigma^{-1/2}$
 
 天才。
 
@@ -109,11 +116,11 @@ $$S=Q_T \times SVD(R_TR_W^T) \times Q_W^T=Q_T U_R \Sigma V_R Q_W^T$$
 
 这里比较简单，证明也写在Wiki上了：https://en.wikipedia.org/wiki/Orthogonal_Procrustes_problem
 
-简单来说，就是求一个正交矩阵（变换）$$\Omega$$，使得B和变换过的A尽可能接近。
+简单来说，就是求一个正交矩阵（变换）$\Omega$，使得B和变换过的A尽可能接近。
 
 $$\underset{\Omega}{\text{minimize}}\quad \|\Omega A-B\|_F$$
 
-这个是有解析解的，只要对A和B的Gramian Matrix做SVD分解，脱去中间的特征值对角矩阵$$\Sigma$$以后把U和V乘起来就可以了。
+这个是有解析解的，只要对A和B的Gramian Matrix做SVD分解，脱去中间的特征值对角矩阵$\Sigma$以后把U和V乘起来就可以了。
 
 ## Spark实战
 
@@ -152,20 +159,20 @@ def low_rank_svd(item_df: DataFrame, item_col: str, user_df: DataFrame, user_col
 
 其实Spark提供了[QR分解的函数](https://spark.apache.org/docs/3.5.5/api/python/reference/api/pyspark.mllib.linalg.distributed.RowMatrix.html#pyspark.mllib.linalg.distributed.RowMatrix.tallSkinnyQR)，但是我的环境里面运用有BUG。而且原生的函数需要创建相应的Matrix对象，我们这里的算法和Spark的矩阵计算的兼容性并不好——因为我们会需要对齐两个Embedding Matrix，而且对应的ID信息也不能丢。最后结果也要保存到HIVE中。基于以上的理由，最后我们没有选择Spark原生的矩阵计算函数。
 
-`cross_gram_matrix`的作用是求得两个nxe矩阵的Gramian矩阵： $$G = A^T A$$
+`cross_gram_matrix`的作用是求得两个nxe矩阵的Gramian矩阵： $G = A^T A$
 
 由于我们只要求取QR分解中的R，所以我们这里采取了另一种简易做法：
 
-考虑到：$$A=QR$$
+考虑到：$A=QR$
 
 - Q: 正交向量组
 - R: 上三角矩阵
 
-我们轻易能够证明（中间的Q因为是正交矩阵，$$Q^TQ$$变成单位矩阵消掉了）
+我们轻易能够证明（中间的Q因为是正交矩阵，$Q^TQ$变成单位矩阵消掉了）
 
 $$A^TA=(QR)^TQR=R^TQ^TQR=R^TR$$
 
-所以我们只要把$$G = A^T A$$矩阵做一个cholesky分解就可以得到矩阵R了。
+所以我们只要把$G = A^T A$矩阵做一个cholesky分解就可以得到矩阵R了。
 
 ```python
 def qr_decompose(df: DataFrame, col: str) -> np.ndarray:
@@ -175,7 +182,7 @@ def qr_decompose(df: DataFrame, col: str) -> np.ndarray:
 
 ### Cross Gram Matrix
 
-没什么可说的，就是把1xe的行向量v求得$$v^Tv$$并且叠起来就得到了。
+没什么可说的，就是把1xe的行向量v求得$v^Tv$并且叠起来就得到了。
 
 ```python
 # This is a function to calculate matrix multiplication A^T @ B in Spark

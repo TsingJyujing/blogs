@@ -1,3 +1,10 @@
++++
+title = '修复Linux磁盘中的坏道'
+date = '2026-03-15'
+draft = false
+weight = 1
++++
+
 # 修复Linux磁盘中的坏道
 
 ## 前言

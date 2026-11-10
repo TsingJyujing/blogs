@@ -1,3 +1,10 @@
++++
+title = '记一个离谱的MySQL语句的性能问题'
+date = '2022-07-31'
+draft = false
+weight = 1
++++
+
 # 记一个离谱的MySQL语句的性能问题
 
 ## 故障现象

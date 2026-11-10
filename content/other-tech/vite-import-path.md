@@ -1,3 +1,10 @@
++++
+title = 'React-Script转Vite时引用路径的问题'
+date = '2024-07-14'
+draft = false
+weight = 13
++++
+
 # React-Script转Vite时引用路径的问题
 
 最大的问题是Import Path的问题，正常情况下，如果我有这样的src：

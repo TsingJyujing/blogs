@@ -1,3 +1,10 @@
++++
+title = '拯救变砖的OpenWRT路由器'
+date = '2022-11-24'
+draft = false
+weight = 5
++++
+
 # 拯救变砖的OpenWRT路由器
 
 我的路由器是[TP-Link Archer C7 V5](https://www.tp-link.com/us/home-networking/wifi-router/archer-c7/v5/)，之后刷了[OpenWRT](https://openwrt.org/toh/tp-link/archer_c7)系统。

@@ -1,3 +1,10 @@
++++
+title = 'Linux 下利用 `mdadm` 命令设置软件 RAID'
+date = '2020-05-07'
+draft = false
+weight = 4
++++
+
 # Linux 下利用 `mdadm` 命令设置软件 RAID
 
 ## 前言

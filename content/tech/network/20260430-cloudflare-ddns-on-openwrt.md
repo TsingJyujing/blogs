@@ -1,3 +1,10 @@
++++
+title = '在OpenWRT路由器上配置Cloudflare DDNS'
+date = '2026-05-01'
+draft = false
+weight = 1
++++
+
 # 在OpenWRT路由器上配置Cloudflare DDNS
 
 修订日志：

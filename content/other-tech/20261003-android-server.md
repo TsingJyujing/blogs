@@ -1,3 +1,10 @@
++++
+title = '使用Termux把Android变成一台服务器'
+date = '2026-10-03'
+draft = false
+weight = 3
++++
+
 # 使用Termux把Android变成一台服务器
 
 
